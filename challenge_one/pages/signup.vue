@@ -1,6 +1,8 @@
 <template>
 <div class="background">
-    <div><h1>Hello!!!Sign up</h1></div>
+    <div>
+        <h1>Hello!!!Sign up</h1>
+    </div>
       
 </div>
 
@@ -11,7 +13,7 @@ export default {}
 </script>
 
 <style scoped lang="scss">
-.background {
+html{
     background-color: aquamarine;
 }
 
