@@ -1,11 +1,11 @@
 <template>
-<div class="container flex">
+<div class="container row">
 
-    <div class="partone "> 
+    <div class="partone col-xl-6 col-lg-12 col-md-12 col-sm-12"> 
         <h1>part one</h1>
     </div>
-    <div class="parttwo ">
-            <h1>Paet two</h1>
+    <div class="parttwo col-xl-6 col-lg-12 col-md-12 col-sm-12">
+       <h1>Paet two</h1>
     </div>
       
 </div>
@@ -18,7 +18,7 @@ export default {}
 
 <style scoped lang="scss">
 .container {
-  padding: 0;
+  padding: 20px;
   margin: 0;
   min-height: 100vh;
   min-width: -webkit-fill-available;
@@ -27,22 +27,6 @@ export default {}
   background-position: bottom;
   background-size: 100%;
   background-color: #A5D7CC;
-
-    > {
-        div {
-        flex: 1;
-        }
-
-        .partone {
-            flex: 1;
-        background-color: red;
-        }
-
-        .parttwo {
-            flex: 1;
-        background-color: blue;
-        }
-  }
 }
 
 
