@@ -7,7 +7,7 @@
         <!--Title text -->
         <p id="title">Sign up</p>
         <!-- Button: Google-->
-        <div class="row mt-4 mb-5 buttongoogle">
+        <div class="row mt-4 mb-4 buttongoogle">
           <div class="col-md-12">
             <a
               class="
@@ -26,6 +26,10 @@
               Sign up with Google</a
             >
           </div>
+        </div>
+        <!-- Text: OR -->
+        <div class="textlinebehind">
+          <p><span class="border"></span><span class="textor">Or</span></p>
         </div>
         <div class="fullname row">
           <div class="col-xl-6 col-lg-6col-md-6 col-sm-12">
@@ -119,6 +123,33 @@
       .btn {
         font-size: 14px !important;
         border: 1px solid #e8e5e5;
+      }
+    }
+
+    /* text element with line behind text */
+    .textlinebehind {
+      p {
+        text-align: center;
+        position: relative;
+        background-color: #fff;
+
+        .border {
+          border-bottom: 3px solid #999;
+          position: absolute;
+          width: 100%;
+          left: 0;
+          top: 50%;
+          margin-top: -1px;
+          z-index: 1;
+        }
+
+        .textor {
+          background-color: #fff;
+          position: relative;
+          z-index: 2;
+          padding: 10px;
+          display: inline-block;
+        }
       }
     }
   }
