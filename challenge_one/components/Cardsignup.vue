@@ -31,23 +31,53 @@
         <div class="textlinebehind">
           <p><span class="border"></span><span class="textor">Or</span></p>
         </div>
-        <div class="fullname row">
-          <div class="col-xl-6 col-lg-6col-md-6 col-sm-12">
+        <div class="formgroup row">
+          <!-- input: Firstname -->
+          <div class="mt-md-1 col-xl-6 col-lg-6 col-md-12 col-sm-12">
             <p>Firstname</p>
+            <b-form-input v-model="text" placeholder="Firstname"></b-form-input>
+          </div>
+          <!-- input: Lastname -->
+          <div class="mt-3 mt-lg-1 col-xl-6 col-lg-6 col-md-12 col-sm-12">
+            <p>Lastname</p>
+            <b-form-input v-model="text" placeholder="Lastname"></b-form-input>
+          </div>
+          <!-- input: Email -->
+          <div class="mt-3 col-12">
+            <p>Email Address</p>
             <b-form-input
               v-model="text"
-              placeholder="Enter your name"
+              placeholder="Email Address"
             ></b-form-input>
           </div>
-          <div class="col-xl-6 col-lg-6col-md-6 col-sm-12">
-            <p>Lastname</p>
+          <!-- input: Password -->
+          <div class="mt-3 col-12">
+            <p>Password</p>
+            <b-form-input v-model="text" placeholder="Password"></b-form-input>
+          </div>
+          <!-- input: Confirm Password -->
+          <div class="mt-3 col-12">
+            <p>Confirm Password</p>
             <b-form-input
               v-model="text"
-              placeholder="Enter your name"
+              placeholder="Confirm Password"
             ></b-form-input>
           </div>
         </div>
+       <!-- Button Create Account -->
+        <div class="btsubmit mt-5">
+          <b-button 
+            class="pt-3 pb-3" 
+            style="font-weight: bold; background-color:#A5D7CC; border: none; border-radius: 8px;;" 
+            block >
+            Create Account
+          </b-button>
+        </div>
 
+        <div class="textlogin mt-4">
+          <p>Allready have an account?</p>
+          <a class="pl-2"> Log in </a>
+        </div>
         <!-- End Form Group -->
       </div>
     </b-card>
@@ -123,6 +153,7 @@
       .btn {
         font-size: 14px !important;
         border: 1px solid #e8e5e5;
+        border-radius: 8px;
       }
     }
 
@@ -150,6 +181,27 @@
           padding: 10px;
           display: inline-block;
         }
+      }
+    }
+
+    .formgroup {
+      .form-control {
+        background-color: #f5f6f5;
+        border: 1px solid #e8e5e5;
+        border-radius: 8px;
+      }
+
+      p {
+        font-weight: bold;
+      }
+    }
+
+    .textlogin{
+      display: flex;
+      font-size: 14px;
+      a {
+        font-weight: bold;
+        color: #6fc5b2;
       }
     }
   }
