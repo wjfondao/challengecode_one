@@ -75,7 +75,7 @@
         </div>
 
         <div class="textlogin mt-4">
-          <p>Allready have an account?</p>
+          <p>All ready have an account?</p>
           <a class="pl-2"> Log in </a>
         </div>
         <!-- End Form Group -->
