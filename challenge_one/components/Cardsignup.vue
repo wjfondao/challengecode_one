@@ -6,32 +6,7 @@
       <div class="formsignup">
         <!--Title text -->
         <p id="title">Sign up</p>
-        <!-- Button: Google-->
-        <div class="row mt-4 mb-4 buttongoogle">
-          <div class="col-md-12">
-            <a
-              class="
-                btn btn-lg btn-google btn-block
-                text-uppercase
-                btn-outline
-                pt-2
-                pb-2
-              "
-              href="#"
-            >
-              <img
-                src="https://img.icons8.com/color/20/000000/google-logo.png"
-                class="mr-2"
-              />
-              Sign up with Google</a
-            >
-          </div>
-        </div>
-        <!-- Text: OR -->
-        <div class="textlinebehind">
-          <p><span class="border"></span><span class="textor">Or</span></p>
-        </div>
-        <div class="formgroup row">
+        <div class="formgroup row pt-4">
           <!-- input: Firstname -->
           <div class="mt-md-1 col-xl-6 col-lg-6 col-md-12 col-sm-12">
             <p>Firstname</p>
@@ -76,7 +51,7 @@
 
         <div class="textlogin mt-4">
           <p>All ready have an account?</p>
-          <a class="pl-2"> Log in </a>
+          <a class="pl-2" href="../../signin"> Log in </a>
         </div>
         <!-- End Form Group -->
       </div>
