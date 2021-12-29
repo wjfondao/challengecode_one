@@ -77,7 +77,7 @@
         <!--  text: Log up -->
         <div class="textlogin mt-4">
           <p>Don't have an account?</p>
-          <a class="pl-2"> Log up </a>
+          <a class="pl-2" href="../../signup"> Log up </a>
         </div>
         <!-- End Form Group -->
       </div>
