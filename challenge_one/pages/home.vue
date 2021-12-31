@@ -9,6 +9,9 @@
         <p>Marry</p>
         <p>Christmas</p>
       </div>
+      <div class="subtitle">
+        <p>Season’s Greetings– May love and laughter fill your life at Christmas and throughout the New Year.</p>
+      </div>
     </div>
     <div class="pagetwo">
       <h1>Page 2</h1>
@@ -46,6 +49,13 @@
       text-align: center;
       p{
           margin-bottom: -1rem;
+      }
+    }
+    .subtitle{
+      color: white;
+      text-align: center;
+      p {
+        font-size: 18px;
       }
     }
   }
