@@ -79,10 +79,14 @@
       p {
         font-size: 18px;
         margin-bottom: 0.16rem;
-
+        margin-right: 5rem;
+        margin-left: 5rem;
+        
         /* Iphone */
         @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
           font-size: 14px;
+          margin-right: 0.15rem;
+          margin-left: 0.15rem;
         }
       }
     }
@@ -102,7 +106,7 @@
         /* Iphone */
         @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
           font-size: 14px;
-           margin-left: 1.5rem !important;
+          margin-left: 1.5rem !important;
         }
       }
       .btsignup {
