@@ -42,6 +42,11 @@
     margin-top: auto;
     margin-bottom: auto;
 
+    /* Ipad */
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
+      margin-top: 5rem;
+    }
+
     /* Iphone */
     @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
       margin-top: 5rem;
@@ -52,6 +57,14 @@
       .bell {
         width: 100px;
         height: 150px;
+
+        /* Ipad */
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
+          width: 80px;
+          height: 100px;
+        }
+
+        /* Iphone */
         @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
           width: 70px;
           height: 90px;
@@ -63,6 +76,11 @@
       font-size: 89px;
       color: white;
       text-align: center;
+
+      /* Ipad */
+      @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
+        font-size: 62px;
+      }
 
       /* Iphone */
       @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -81,7 +99,7 @@
         margin-bottom: 0.16rem;
         margin-right: 5rem;
         margin-left: 5rem;
-        
+
         /* Iphone */
         @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
           font-size: 14px;
@@ -134,26 +152,61 @@
     justify-content: center;
     margin-top: auto;
     margin-bottom: auto;
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+    @keyframes example {
+      0% {
+        bottom: 1px;
+        top: 1px;
+      }
+
+      25% {
+        bottom: 10px;
+        top: 1px;
+      }
+
+      50% {
+        bottom: 10px;
+        top: 10px;
+      }
+
+      75% {
+        bottom: 1px;
+        top: 10px;
+      }
+
+      100% {
+        bottom: 1px;
+        top: 1px;
+      }
+    }
+
     .santawithtree {
-      width: 700px;
-      height: 800px;
+      width: 680px;
+      height: 780px;
 
       /* Ipadpro */
-      @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+      @media only screen and (min-device-width: 1023px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
         width: 500px;
         height: 600px;
       }
 
       /* Ipad */
-      @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+      @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
         width: 300px;
         height: 350px;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
       }
 
       /* Iphone */
       @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
         width: 200px;
         height: 250px;
+        margin-bottom: 1rem;
       }
     }
   }
