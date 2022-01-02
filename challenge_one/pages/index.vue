@@ -22,12 +22,15 @@
       </div>
     </div>
     <div class="pagetwo col-xl">
-      <div class="">
+      <!--  start: image calendar-->
+      <div>
         <img class="calendar" src="../assets/images/calendar_25dec.png" />
       </div>
-      <div class=" ">
+      <!--  start: image gift-->
+      <div class="">
         <img class="imggift" src="../assets/images/gift.png" />
       </div>
+      <!--  start: image santa wit htree-->
       <img class="santawithtree" src="../assets/images/santawithtree.png" />
     </div>
   </div>
@@ -153,12 +156,15 @@
     }
     // end : set button
   }
+
+  // Start : Page two
   .pagetwo {
     display: flex;
     justify-content: center;
     margin-top: auto;
     margin-bottom: auto;
 
+    //start: image calendar
     .calendar {
       position: absolute;
       width: 100px;
@@ -210,6 +216,7 @@
       }
     }
 
+    //start: image gift
     .imggift {
       position: absolute;
       width: 100px;
@@ -252,8 +259,16 @@
         }
       }
 
+      /* Ipadpro */
+      @media only screen and (min-device-width: 1023px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+        margin-top: 26rem;
+        margin-left: 0.5rem;
+      }
+
       /* Ipad */
       @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
+        margin-top: 18rem;
+        margin-left: 0.5rem;
         width: 50px;
         height: 50px;
       }
@@ -267,6 +282,7 @@
       }
     }
 
+    //start: image santa wit htree
     .santawithtree {
       width: 680px;
       height: 780px;
