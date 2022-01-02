@@ -22,6 +22,12 @@
       </div>
     </div>
     <div class="pagetwo col-xl">
+      <div class="">
+        <img class="calendar" src="../assets/images/calendar_25dec.png" />
+      </div>
+      <div class=" ">
+        <img class="imggift" src="../assets/images/gift.png" />
+      </div>
       <img class="santawithtree" src="../assets/images/santawithtree.png" />
     </div>
   </div>
@@ -152,6 +158,114 @@
     justify-content: center;
     margin-top: auto;
     margin-bottom: auto;
+
+    .calendar {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      margin-right: -4rem;
+      margin-top: 2.5rem;
+      animation-name: calendar;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+
+      @keyframes calendar {
+        0% {
+          bottom: 1px;
+          top: 1px;
+        }
+
+        25% {
+          bottom: 10px;
+          top: 1px;
+        }
+
+        50% {
+          bottom: 10px;
+          top: 5px;
+        }
+
+        75% {
+          bottom: 1px;
+          top: 10px;
+        }
+
+        100% {
+          bottom: 1px;
+          top: 1px;
+        }
+      }
+
+      /* Ipad */
+      @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
+        width: 50px;
+        height: 50px;
+      }
+
+      /* Iphone */
+      @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+        margin-top: 1rem;
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    .imggift {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      margin-right: 1rem;
+      margin-top: 35rem;
+      animation-name: gift;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+
+      @keyframes gift {
+        0% {
+          transform: rotate(-20deg);
+          bottom: 1px;
+          top: 1px;
+        }
+
+        25% {
+          transform: rotate(10deg);
+          bottom: 10px;
+          top: 1px;
+        }
+
+        50% {
+          transform: rotate(10deg);
+          bottom: 10px;
+          top: 5px;
+        }
+
+        75% {
+          transform: rotate(10deg);
+          bottom: 1px;
+          top: 10px;
+        }
+
+        100% {
+          transform: rotate(-20deg);
+          bottom: 1px;
+          top: 1px;
+        }
+      }
+
+      /* Ipad */
+      @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
+        width: 50px;
+        height: 50px;
+      }
+
+      /* Iphone */
+      @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+        margin-top: 11rem;
+        margin-left: 0.5rem;
+        width: 40px;
+        height: 40px;
+      }
+    }
 
     .santawithtree {
       width: 680px;
