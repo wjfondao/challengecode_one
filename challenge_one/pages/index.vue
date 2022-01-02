@@ -17,8 +17,11 @@
       </div>
       <!--  start: Button-->
       <div class="signbutton mt-5">
-        <b-button pill class="btsignin mr-4">Sign in </b-button>
-        <b-button pill class="btsignup">Sign up</b-button>
+        <!-- <b-button pill class="btsignin mr-4" href="../../signin">Sign in</b-button> -->
+        <b-button pill class="btsignin mr-4" href="../../signup"
+          >Sign in</b-button
+        >
+        <b-button pill class="btsignup" href="../../signup">Sign up</b-button>
       </div>
     </div>
     <div class="pagetwo col-xl">
@@ -46,6 +49,10 @@
   flex-direction: row;
   background-color: #a5d7cc;
   font-family: Lucida Bright, Georgia, serif;
+
+  @media screen and (max-width: 991px) {
+    overflow: hidden;
+  }
   // Start : Page one
   .pageone {
     margin-top: auto;
@@ -58,7 +65,7 @@
 
     /* Iphone */
     @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
-      margin-top: 5rem;
+      margin-top: 2rem;
     }
     .imagebell {
       display: flex;
@@ -124,11 +131,15 @@
       justify-content: center;
       .btsignin {
         font-weight: bold;
-        padding: 0.75rem 3rem 0.75rem 3rem;
+        padding: 0.75rem 3.1rem 0.75rem 3.1rem;
         color: #edead9;
         background-color: #129277;
         border-color: transparent;
         font-size: 18px;
+
+        @media screen and (max-width: 991px) {
+          margin-left: 10rem !important;
+        }
 
         /* Iphone */
         @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -138,7 +149,7 @@
       }
       .btsignup {
         font-weight: bold;
-        padding: 0.75rem 3rem 0.75rem 3rem;
+        padding: 0.75rem 3.1rem 0.75rem 3.1rem;
         color: #129277;
         background-color: #edead9;
         border-color: transparent;
