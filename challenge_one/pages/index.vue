@@ -152,37 +152,6 @@
     justify-content: center;
     margin-top: auto;
     margin-bottom: auto;
-    position: relative;
-    animation-name: example;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-
-    @keyframes example {
-      0% {
-        bottom: 1px;
-        top: 1px;
-      }
-
-      25% {
-        bottom: 10px;
-        top: 1px;
-      }
-
-      50% {
-        bottom: 10px;
-        top: 10px;
-      }
-
-      75% {
-        bottom: 1px;
-        top: 10px;
-      }
-
-      100% {
-        bottom: 1px;
-        top: 1px;
-      }
-    }
 
     .santawithtree {
       width: 680px;
