@@ -1,5 +1,16 @@
 <template>
   <div class="container row">
+    <div class="imagemylogo">
+      <a href="../../">
+        <img
+          class="side-img"
+          alt="Vue logo"
+          width="80px"
+          height="80px"
+          src="../assets/images/logo1.png"
+        />
+      </a>
+    </div>
     <div class="pageone col-xl">
       <div class="imagebell">
         <img class="bell" src="../assets/images/bell.png" />
@@ -17,11 +28,17 @@
       </div>
       <!--  start: Button-->
       <div class="signbutton mt-5">
-        <!-- <b-button pill class="btsignin mr-4" href="../../signin">Sign in</b-button> -->
         <b-button pill class="btsignin mr-4" href="../../signup"
           >Sign in</b-button
         >
         <b-button pill class="btsignup" href="../../signup">Sign up</b-button>
+
+        <!-- <b-button pill class="btsigninmobile mr-4" href="../../signup"
+          >Sign in</b-button
+        >
+        <b-button pill class="btsignupmobile" href="../../signup"
+          >Sign up</b-button
+        > -->
       </div>
     </div>
     <div class="pagetwo col-xl">
@@ -63,10 +80,6 @@
       margin-top: 5rem;
     }
 
-    /* Iphone */
-    @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
-      margin-top: 2rem;
-    }
     .imagebell {
       display: flex;
       justify-content: center;
@@ -81,7 +94,7 @@
         }
 
         /* Iphone */
-        @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+        @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
           width: 70px;
           height: 90px;
         }
@@ -99,9 +112,10 @@
       }
 
       /* Iphone */
-      @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+      @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
         font-size: 48px;
       }
+
       p {
         margin-bottom: -1.25rem;
       }
@@ -117,7 +131,7 @@
         margin-left: 5rem;
 
         /* Iphone */
-        @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+        @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
           font-size: 14px;
           margin-right: 0.15rem;
           margin-left: 0.15rem;
@@ -137,14 +151,16 @@
         border-color: transparent;
         font-size: 18px;
 
-        @media screen and (max-width: 991px) {
-          margin-left: 10rem !important;
-        }
+        // @media screen and (max-width: 991px) {
+        // font-size: 18px;
+        // }
 
         /* Iphone */
-        @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+        @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
           font-size: 14px;
           margin-left: 1.5rem !important;
+          margin-top: -1.5rem !important;
+          // display: none;
         }
       }
       .btsignup {
@@ -156,14 +172,42 @@
         font-size: 18px;
 
         /* Iphone */
-        @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+        @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
           display: flex;
           flex-wrap: wrap;
           font-size: 14px;
           margin-top: 1rem;
           margin-left: 0.25rem !important;
+          // display: none;
         }
       }
+
+      // .btsigninmobile {
+      //   display: none;
+
+      //   @media screen and (max-width: 767px) {
+      //     display: inline;
+      //     font-weight: bold;
+      //     padding: 0.75rem 3.1rem 0.75rem 3.1rem;
+      //     color: #edead9;
+      //     background-color: #129277;
+      //     border-color: transparent;
+      //     font-size: 14px;
+      //   }
+      // }
+
+      // .btsignupmobile {
+      //   display: none;
+      //   @media screen and (max-width: 767px) {
+      //     display: inline;
+      //     font-weight: bold;
+      //     padding: 0.75rem 3.1rem 0.75rem 3.1rem;
+      //     color: #129277;
+      //     background-color: #edead9;
+      //     border-color: transparent;
+      //     font-size: 14px;
+      //   }
+      // }
     }
     // end : set button
   }
@@ -220,7 +264,7 @@
       }
 
       /* Iphone */
-      @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+      @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
         margin-top: 1rem;
         width: 40px;
         height: 40px;
@@ -285,7 +329,7 @@
       }
 
       /* Iphone */
-      @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+      @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
         margin-top: 11rem;
         margin-left: 0.5rem;
         width: 40px;
@@ -297,6 +341,7 @@
     .santawithtree {
       width: 680px;
       height: 780px;
+      margin-top: 1rem;
 
       /* Ipadpro */
       @media only screen and (min-device-width: 1023px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -313,7 +358,7 @@
       }
 
       /* Iphone */
-      @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+      @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
         width: 200px;
         height: 250px;
         margin-bottom: 1rem;
