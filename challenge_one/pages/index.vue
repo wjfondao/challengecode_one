@@ -143,6 +143,12 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+
+      /* Iphone */
+      @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+        margin-top: 1rem !important;
+      }
+
       .btsignin {
         font-weight: bold;
         padding: 0.75rem 3.1rem 0.75rem 3.1rem;
@@ -151,16 +157,11 @@
         border-color: transparent;
         font-size: 18px;
 
-        // @media screen and (max-width: 991px) {
-        // font-size: 18px;
-        // }
-
         /* Iphone */
         @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
           font-size: 14px;
           margin-left: 1.5rem !important;
-          margin-top: -1.5rem !important;
-          // display: none;
+          margin-top: 14px !important;
         }
       }
       .btsignup {
@@ -181,33 +182,6 @@
           // display: none;
         }
       }
-
-      // .btsigninmobile {
-      //   display: none;
-
-      //   @media screen and (max-width: 767px) {
-      //     display: inline;
-      //     font-weight: bold;
-      //     padding: 0.75rem 3.1rem 0.75rem 3.1rem;
-      //     color: #edead9;
-      //     background-color: #129277;
-      //     border-color: transparent;
-      //     font-size: 14px;
-      //   }
-      // }
-
-      // .btsignupmobile {
-      //   display: none;
-      //   @media screen and (max-width: 767px) {
-      //     display: inline;
-      //     font-weight: bold;
-      //     padding: 0.75rem 3.1rem 0.75rem 3.1rem;
-      //     color: #129277;
-      //     background-color: #edead9;
-      //     border-color: transparent;
-      //     font-size: 14px;
-      //   }
-      // }
     }
     // end : set button
   }
