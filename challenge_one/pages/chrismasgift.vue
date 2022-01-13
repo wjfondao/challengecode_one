@@ -1,0 +1,161 @@
+<template>
+  <div>
+    <div class="container">
+      <div class="container_content">
+        <div class="container_content_inner">
+          <div class="title">
+            <h1>Hello World</h1>
+          </div>
+          <div class="par">
+            <p>
+              Cupiditate alias odio omnis minima veritatis saepe porro,
+              repellendus natus vitae, sequi exercitationem ipsam, qui possimus
+              sit eveniet laborum sapiente quisquam quae neque velit?
+            </p>
+          </div>
+          <div class="btns">
+            <button class="btns_more">See more</button>
+          </div>
+        </div>
+      </div>
+      <div class="container_outer_img">
+        <div class="img-inner">
+          <img
+            src="https://images.unsplash.com/photo-1517911041065-4960862d38f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80"
+            alt=""
+            class="container_img"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="overlay"></div>
+  </div>
+</template>
+
+<style scoped lang="scss">
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: -10;
+  background-color: #151226;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  animation: expand 0.8s ease forwards;
+  background-color: #151226;
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  transition: all 0.8s ease;
+}
+
+.container_content {
+  width: 50%;
+}
+
+.container_content_inner {
+  width: 80%;
+  margin-left: 80px;
+}
+
+.container_outer_img {
+  margin: 50px;
+  width: 50%;
+  overflow: hidden;
+}
+
+.container_img {
+  width: 100%;
+  animation: slideIn 1.5s ease-in-out forwards;
+}
+
+.par {
+  height: auto;
+  overflow: hidden;
+}
+
+p {
+  line-height: 28px;
+  transform: translateY(300px);
+  animation: slideUp 0.8s ease-in-out forwards 0.8s;
+}
+
+.btns {
+  height: 100%;
+  position: relative;
+  width: 150px;
+  overflow: hidden;
+}
+
+.btns_more {
+  background: transparent;
+  border: 1px solid#bf307f;
+  border-radius: 50px;
+  padding: 8px 12px;
+  color: #bf307f;
+  font-size: 16px;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 15px;
+  outline: none;
+  transform: translateY(50px);
+  animation: slideUp 0.8s ease-in-out forwards 1s;
+}
+
+.title {
+  overflow: hidden;
+  height: auto;
+}
+
+h1 {
+  font-size: 40px;
+  color: #bf307f;
+  margin-bottom: 20px;
+  transform: translateY(100px);
+  animation: slideUp 0.8s ease forwards 0.5s;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(500px) scale(0.2);
+  }
+
+  100% {
+    transform: translateX(0.1px) scale(1);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0.1px);
+  }
+}
+
+@keyframes expand {
+  0% {
+    background: #bf307f;
+    transform: translateX(1400px);
+  }
+  100% {
+    transform: translateX(0.1px);
+  }
+}
+</style>
