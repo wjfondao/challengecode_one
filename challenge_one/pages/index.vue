@@ -32,13 +32,6 @@
           >Sign in</b-button
         >
         <b-button pill class="btsignup" href="../../signup">Sign up</b-button>
-
-        <!-- <b-button pill class="btsigninmobile mr-4" href="../../signup"
-          >Sign in</b-button
-        >
-        <b-button pill class="btsignupmobile" href="../../signup"
-          >Sign up</b-button
-        > -->
       </div>
     </div>
     <div class="pagetwo col-xl">
@@ -179,7 +172,6 @@
           font-size: 14px;
           margin-top: 1rem;
           margin-left: 0.25rem !important;
-          // display: none;
         }
       }
     }
@@ -201,12 +193,12 @@
       margin-right: -4rem;
       margin-top: 2.5rem;
       animation-name: calendar;
-      animation-duration: 5s;
+      animation-duration: 3s;
       animation-iteration-count: infinite;
 
       @keyframes calendar {
         0% {
-          bottom: 1px;
+          bottom: 10px;
           top: 1px;
         }
 
@@ -221,12 +213,12 @@
         }
 
         75% {
-          bottom: 1px;
+          bottom: 20px;
           top: 10px;
         }
 
         100% {
-          bottom: 1px;
+          bottom: 20px;
           top: 1px;
         }
       }
