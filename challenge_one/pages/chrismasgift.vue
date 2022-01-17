@@ -56,7 +56,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: #000;
+      background-image: url(../assets/images/Christmas.svg);
       transform-origin: left;
       animation: animate 1s linear forwards;
     }
@@ -100,5 +100,6 @@
   100% {
     transform: scaleX(1);
   }
+  
 }
 </style>
