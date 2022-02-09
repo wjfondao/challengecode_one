@@ -15,6 +15,9 @@
       </div>
     </div>
     <div class="loading">
+      <!-- <div class="imagebell">
+        <img class="bell" src="../assets/images/bell.png" />
+      </div> -->
       <h2>2021</h2>
       <div class="bar"></div>
       <h2>2022</h2>
@@ -29,12 +32,14 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: #fff;
+  background: #A5D7CC;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 15;
   animation: fadeout 11s linear forwards;
+
+ 
 
   h2 {
     color: #000;
@@ -46,7 +51,7 @@
     height: 40px;
     background: transparent;
     margin: 0 20px;
-    border: 2px solid #000;
+    border: 2px solid #129277;
     box-sizing: border-box;
 
     &::before {
@@ -56,7 +61,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: url(../assets/images/Christmas.svg);
+      background: #129277;
       transform-origin: left;
       animation: animate 1s linear forwards;
     }
@@ -73,7 +78,7 @@
       letter-spacing: 10px;
       text-align: center;
       line-height: 36px;
-      color: #fff;
+      color: #129277;
       font-size: 20px;
       mix-blend-mode: difference;
     }
@@ -100,6 +105,5 @@
   100% {
     transform: scaleX(1);
   }
-  
 }
 </style>
