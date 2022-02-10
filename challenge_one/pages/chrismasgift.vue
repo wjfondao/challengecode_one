@@ -15,12 +15,10 @@
       </div>
     </div>
     <div class="loading">
-      <!-- <div class="imagebell">
-        <img class="bell" src="../assets/images/bell.png" />
-      </div> -->
-      <h2>2021</h2>
-      <div class="bar"></div>
-      <h2>2022</h2>
+      <div class="imagesanta">
+        <img class="santa" src="../assets/images/santastandingonsled.png" />
+      </div>
+      <div class="bar "></div>
     </div>
   </div>
 </template>
@@ -32,14 +30,25 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: #A5D7CC;
+  background: #129277;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 15;
-  animation: fadeout 11s linear forwards;
+  animation: fadeout 10s linear forwards;
 
- 
+  .imagesanta {
+    .santa {
+      position: absolute;
+      margin-top: 10rem;
+      width: 250px;
+      height: 300px;
+      animation-name: santa;
+      animation-duration: 15s;
+      animation-iteration-count: 1;
+      box-sizing: border-box;
+    }
+  }
 
   h2 {
     color: #000;
@@ -50,8 +59,8 @@
     width: 1400px;
     height: 40px;
     background: transparent;
-    margin: 0 20px;
-    border: 2px solid #129277;
+    margin: 0 25px;
+    border: 2px solid #a5d7cc;
     box-sizing: border-box;
 
     &::before {
@@ -61,13 +70,13 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: #129277;
+      background: #a5d7cc;
       transform-origin: left;
-      animation: animate 1s linear forwards;
+      animation: animate 5s linear forwards;
     }
 
     &::after {
-      content: 'Loading...';
+      content: 'Ho Ho Ho ~ Merry Christmas...';
       position: absolute;
       top: 0;
       left: 0;
@@ -78,7 +87,7 @@
       letter-spacing: 10px;
       text-align: center;
       line-height: 36px;
-      color: #129277;
+      color: #a5d7cc;
       font-size: 20px;
       mix-blend-mode: difference;
     }
@@ -104,6 +113,17 @@
   }
   100% {
     transform: scaleX(1);
+  }
+}
+
+@keyframes santa {
+  0% {
+    left: 1px;
+    top: 1px;
+  }
+  100% {
+    left: 2000px;
+    top: 1px;
   }
 }
 </style>
