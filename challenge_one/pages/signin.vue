@@ -1,17 +1,11 @@
 <template>
   <div class="container row">
     <div class="partone col-xl-5 col-lg-12 col-md-12 col-sm-12">
+       <!-- start header -->
       <div class="imagemylogo">
-        <a href="../../">
-          <img
-            class="side-img"
-            alt="Vue logo"
-            width="80px"
-            height="80px"
-            src="../assets/images/logo1.png"
-          />
-        </a>
+        <Header />
       </div>
+       <!-- end header -->
       <div class="texttitle mt-5">
         <p id="textfirst">Hey,</p>
         <p id="textfirst">it’s Christmas time</p>
@@ -132,11 +126,6 @@ export default {}
 
   .parttwo {
     padding: 0;
-
-    /* Ipadpro */
-    // @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
-    //   padding-top: 18rem;
-    // }
 
     /* Ipad */
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
