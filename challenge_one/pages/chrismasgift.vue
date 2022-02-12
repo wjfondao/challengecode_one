@@ -7,27 +7,7 @@
     <!-- end header -->
     <!-- start container content -->
     <div class="container_content mt-5">
-      <!-- start : Text Title  -->
-      <div class="title">
-        <p class="text_title">Hello World</p>
-      </div>
-      <!-- start : Text Title  -->
-      <div class="imgleafangle mb-2">
-        <img class="leafangle" src="../assets/images/leaf_angle.png" />
-        <img class="treeangle" src="../assets/images/tree_angle.png" />
-      </div>
-      <!-- start : subtitle content -->
-      <div class="subtitle row">
-        <div class="col-4">
-          <img class="starleft" src="../assets/images/star.png" />
-        </div>
-        <div class="col-4 text_subtitle">
-          <p class="mb-0">Yo-Ho-Ho !</p>
-          <p class="mb-0">Santa Claus</p>
-          <p class="mb-0">wishes well you.</p>
-        </div>
-        <div class="col-4"></div>
-      </div>
+      <Chrismasshow />
     </div>
     <!-- end container content -->
     <!-- start loading -->
@@ -51,9 +31,12 @@
   padding-left: 15px;
   margin-right: 0;
   margin-left: 0;
-  background-color: #a5d7cc;
   font-family: Lucida Bright, Georgia, serif;
   box-sizing: border-box;
+  background-color: #A5D7CC;
+  background-image: url(http://www.transparenttextures.com/patterns/asfalt-light.png);
+
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 
   // start container content
   .container_content {
@@ -68,6 +51,7 @@
       }
     }
 
+    // start: subtitle
     .subtitle {
       .starleft {
         display: flex;
@@ -75,12 +59,37 @@
         height: 57px;
         margin-left: auto;
       }
-      
+
       .treeangle {
         display: flex;
         width: 52px;
         height: 83px;
         margin-left: auto;
+        margin-right: auto;
+      }
+
+      .sock {
+        display: flex;
+        width: 51px;
+        height: 91px;
+        margin-right: auto;
+      }
+
+      .starright {
+        display: flex;
+        width: 59px;
+        height: 57px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    .imgcontent {
+      display: flex;
+      justify-content: center;
+      .imgsantadeer {
+        width: 641px;
+        height: 367px;
       }
     }
   }
