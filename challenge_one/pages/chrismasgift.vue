@@ -33,7 +33,7 @@
   margin-left: 0;
   font-family: Lucida Bright, Georgia, serif;
   box-sizing: border-box;
-  background-color: #A5D7CC;
+  background-color: #a5d7cc;
   background-image: url(http://www.transparenttextures.com/patterns/asfalt-light.png);
 
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
@@ -43,6 +43,11 @@
     text-align: center;
     font-size: 36px;
     font-weight: bold;
+
+    /* Iphone */
+    @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+      font-size: 18px;
+    }
 
     .imgleafangle {
       .leafangle {
