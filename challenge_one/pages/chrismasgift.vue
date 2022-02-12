@@ -6,8 +6,28 @@
     </div>
     <!-- end header -->
     <!-- start container content -->
-    <div class="container_content">
-      <h1>Hello World</h1>
+    <div class="container_content mt-5">
+      <!-- start : Text Title  -->
+      <div class="title">
+        <p class="text_title">Hello World</p>
+      </div>
+      <!-- start : Text Title  -->
+      <div class="imgleafangle mb-2">
+        <img class="leafangle" src="../assets/images/leaf_angle.png" />
+        <img class="treeangle" src="../assets/images/tree_angle.png" />
+      </div>
+      <!-- start : subtitle content -->
+      <div class="subtitle row">
+        <div class="col-4">
+          <img class="starleft" src="../assets/images/star.png" />
+        </div>
+        <div class="col-4 text_subtitle">
+          <p class="mb-0">Yo-Ho-Ho !</p>
+          <p class="mb-0">Santa Claus</p>
+          <p class="mb-0">wishes well you.</p>
+        </div>
+        <div class="col-4"></div>
+      </div>
     </div>
     <!-- end container content -->
     <!-- start loading -->
@@ -32,7 +52,40 @@
   margin-right: 0;
   margin-left: 0;
   background-color: #a5d7cc;
+  font-family: Lucida Bright, Georgia, serif;
+  box-sizing: border-box;
 
+  // start container content
+  .container_content {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+
+    .imgleafangle {
+      .leafangle {
+        width: 108px;
+        height: 86px;
+      }
+    }
+
+    .subtitle {
+      .starleft {
+        display: flex;
+        width: 59px;
+        height: 57px;
+        margin-left: auto;
+      }
+      
+      .treeangle {
+        display: flex;
+        width: 52px;
+        height: 83px;
+        margin-left: auto;
+      }
+    }
+  }
+
+  // start loading
   .loading {
     position: fixed;
     top: 0;
@@ -125,7 +178,7 @@
           font-size: 12px;
         }
 
-        /* Iphone */
+        /* Galaxy Fold */
         @media only screen and (max-device-width: 280px) {
           content: 'Merry Christmas...';
           letter-spacing: 4px;
@@ -148,6 +201,7 @@
     }
   }
 
+  // animation - image santa
   @keyframes animate {
     0% {
       transform: scaleX(0);
@@ -157,6 +211,7 @@
     }
   }
 
+  // animation - image santa
   @keyframes santa {
     0% {
       left: 1px;
