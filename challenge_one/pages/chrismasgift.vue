@@ -9,6 +9,13 @@
     <div class="container_content mt-5">
       <Chrismasshow />
     </div>
+    <div class="container_message">
+      <h1>page2</h1>
+      <h1>page2</h1>
+      <h1>page2</h1>
+      <h1>page2</h1>
+      <h1>page2</h1>
+    </div>
     <!-- end container content -->
     <!-- start loading -->
     <div class="loading">
@@ -33,6 +40,7 @@
   margin-left: 0;
   font-family: Lucida Bright, Georgia, serif;
   box-sizing: border-box;
+  overflow: hidden;
   background-color: #a5d7cc;
   background-image: url(http://www.transparenttextures.com/patterns/asfalt-light.png);
 
@@ -47,6 +55,11 @@
     /* Iphone */
     @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
       font-size: 18px;
+      overflow: hidden;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
 
     .imgleafangle {
@@ -99,6 +112,15 @@
     }
   }
 
+  .container_message {
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
   // start loading
   .loading {
     position: fixed;

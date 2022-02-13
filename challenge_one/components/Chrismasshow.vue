@@ -45,6 +45,7 @@
 
     /* Iphone */
     @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+      margin-top: 1rem;
       width: 73px;
       height: 58px;
     }
@@ -120,6 +121,7 @@
   .imgsantadeer {
     width: 641px;
     height: 367px;
+    box-sizing: border-box;
 
     /* Iphone */
     @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
