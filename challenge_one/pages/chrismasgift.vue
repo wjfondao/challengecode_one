@@ -1,21 +1,27 @@
 <template>
   <div class="container">
-    <!-- start header -->
-    <div class="imagemylogo">
-      <Header />
-    </div>
+    <section class="header">
+      <!-- start header -->
+      <div class="imagemylogo">
+        <Header />
+      </div>
+    </section>
     <!-- end header -->
     <!-- start container content -->
-    <div class="container_content mt-5">
-      <Chrismasshow />
-    </div>
-    <div class="container_message">
-      <h1>page2</h1>
-      <h1>page2</h1>
-      <h1>page2</h1>
-      <h1>page2</h1>
-      <h1>page2</h1>
-    </div>
+    <section >
+      <div class="  container_content mt-5">
+        <Chrismasshow />
+      </div>
+    </section>
+    <section class="section_two">
+      <div class="container_message">
+        <h1>page2</h1>
+        <h1>page2</h1>
+        <h1>page2</h1>
+        <h1>page2</h1>
+        <h1>page2</h1>
+      </div>
+    </section>
     <!-- end container content -->
     <!-- start loading -->
     <div class="loading">
@@ -46,80 +52,88 @@
 
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 
-  // start container content
-  .container_content {
-    text-align: center;
-    font-size: 36px;
-    font-weight: bold;
-
-    /* Iphone */
-    @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
-      font-size: 18px;
-      overflow: hidden;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    .imgleafangle {
-      .leafangle {
-        width: 108px;
-        height: 86px;
-      }
-    }
-
-    // start: subtitle
-    .subtitle {
-      .starleft {
-        display: flex;
-        width: 59px;
-        height: 57px;
-        margin-left: auto;
-      }
-
-      .treeangle {
-        display: flex;
-        width: 52px;
-        height: 83px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .sock {
-        display: flex;
-        width: 51px;
-        height: 91px;
-        margin-right: auto;
-      }
-
-      .starright {
-        display: flex;
-        width: 59px;
-        height: 57px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
-
-    .imgcontent {
-      display: flex;
-      justify-content: center;
-      .imgsantadeer {
-        width: 641px;
-        height: 367px;
-      }
-    }
+  .header {
+    height: 100vh;
   }
 
-  .container_message {
+
+
+    // start container content
+    .container_content {
+      height: 100vh;
+      box-sizing: border-box;
+      text-align: center;
+      font-size: 36px;
+      font-weight: bold;
+
+      /* Iphone */
+      @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+        font-size: 18px;
+        overflow: hidden;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .imgleafangle {
+        .leafangle {
+          width: 108px;
+          height: 86px;
+        }
+      }
+
+      // start: subtitle
+      .subtitle {
+        .starleft {
+          display: flex;
+          width: 59px;
+          height: 57px;
+          margin-left: auto;
+        }
+
+        .treeangle {
+          display: flex;
+          width: 52px;
+          height: 83px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .sock {
+          display: flex;
+          width: 51px;
+          height: 91px;
+          margin-right: auto;
+        }
+
+        .starright {
+          display: flex;
+          width: 59px;
+          height: 57px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+
+      .imgcontent {
+        display: flex;
+        justify-content: center;
+        .imgsantadeer {
+          width: 641px;
+          height: 367px;
+        }
+      }
+    }
+  
+
+  .section_two {
+    height: 100vh;
+    box-sizing: border-box;
     background-color: #000;
-    color: #fff;
-    overflow: hidden;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    .container_message {
+      color: #fff;
+    }
   }
   // start loading
   .loading {

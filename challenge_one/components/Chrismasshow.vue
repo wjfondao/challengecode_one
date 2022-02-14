@@ -37,6 +37,7 @@
 </template>
 
 <style scoped lang="scss">
+
 // start container content
 .imgleafangle {
   .leafangle {
@@ -133,6 +134,7 @@
 
 // star: scrollng
 .scrolling {
+  display: flex-end;
   .textscrolling {
     font-size: 18px;
 
