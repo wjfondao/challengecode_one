@@ -1,5 +1,5 @@
 <template>
-      <div>
+      <div class="header"> 
       <a href="../../">
         <img
           class="side-img"
@@ -11,3 +11,11 @@
       </a>
     </div>
 </template>
+
+<style scoped lange="scss">
+.header{
+  z-index: 1;
+  margin-bottom: 2px;
+}
+
+</style>
