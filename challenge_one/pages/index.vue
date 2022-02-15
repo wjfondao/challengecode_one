@@ -1,10 +1,5 @@
 <template>
   <div class="container row">
-     <!-- start header -->
-    <div class="imagemylogo">
-      <Header />
-    </div>
-     <!-- end header -->
     <div class="pageone col-xl">
       <div class="imagebell">
         <img class="bell" src="../assets/images/bell.png" />

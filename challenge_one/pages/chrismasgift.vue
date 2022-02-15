@@ -1,15 +1,9 @@
 <template>
   <div class="container">
-    <section class="header">
-      <!-- start header -->
-      <div class="imagemylogo">
-        <Header />
-      </div>
-    </section>
     <!-- end header -->
     <!-- start container content -->
-    <section >
-      <div class="  container_content mt-5">
+    <section>
+      <div class="container_content mt-xl-5">
         <Chrismasshow />
       </div>
     </section>
@@ -51,84 +45,28 @@
   background-image: url(http://www.transparenttextures.com/patterns/asfalt-light.png);
 
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  .section {
+    display: flex;
+    height: 101vh;
+  }
+  // start container content
+  .container_content {
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
 
-  .header {
-    height: 100vh;
+    /* Iphone */
+    @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+      font-size: 18px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
-
-
-    // start container content
-    .container_content {
-      height: 100vh;
-      box-sizing: border-box;
-      text-align: center;
-      font-size: 36px;
-      font-weight: bold;
-
-      /* Iphone */
-      @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
-        font-size: 18px;
-        overflow: hidden;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-
-      .imgleafangle {
-        .leafangle {
-          width: 108px;
-          height: 86px;
-        }
-      }
-
-      // start: subtitle
-      .subtitle {
-        .starleft {
-          display: flex;
-          width: 59px;
-          height: 57px;
-          margin-left: auto;
-        }
-
-        .treeangle {
-          display: flex;
-          width: 52px;
-          height: 83px;
-          margin-left: auto;
-          margin-right: auto;
-        }
-
-        .sock {
-          display: flex;
-          width: 51px;
-          height: 91px;
-          margin-right: auto;
-        }
-
-        .starright {
-          display: flex;
-          width: 59px;
-          height: 57px;
-          margin-left: auto;
-          margin-right: auto;
-        }
-      }
-
-      .imgcontent {
-        display: flex;
-        justify-content: center;
-        .imgsantadeer {
-          width: 641px;
-          height: 367px;
-        }
-      }
-    }
-  
-
   .section_two {
-    height: 100vh;
     box-sizing: border-box;
     background-color: #000;
     .container_message {

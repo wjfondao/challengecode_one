@@ -1,11 +1,6 @@
 <template>
   <div class="container row">
     <div class="partone col-xl-5 col-lg-12 col-md-12 col-sm-12">
-       <!-- start header -->
-      <div class="imagemylogo">
-        <Header />
-      </div>
-       <!-- end header -->
       <div class="texttitle mt-5">
         <p id="textfirst">Hey,</p>
         <p id="textfirst">it’s Christmas time</p>
