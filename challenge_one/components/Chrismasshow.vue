@@ -3,7 +3,7 @@
   <div>
     <!-- start : Text Title  -->
     <div class="title">
-      <p class="text_title">Hello World</p>
+      <p class="text_title">Hello Name</p>
     </div>
     <!-- start : Text Title  -->
     <div class="imgleafangle mb-3">

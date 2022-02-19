@@ -1,5 +1,8 @@
 <template>
   <div class="container">
+    <div>
+      <Header />
+    </div>
     <!-- end header -->
     <!-- start container content -->
     <section>
@@ -9,11 +12,7 @@
     </section>
     <section class="section_two">
       <div class="container_message">
-        <h1>page2</h1>
-        <h1>page2</h1>
-        <h1>page2</h1>
-        <h1>page2</h1>
-        <h1>page2</h1>
+        <Chrismastext />
       </div>
     </section>
     <!-- end container content -->
@@ -34,8 +33,8 @@
 .container {
   min-height: 100vh;
   min-width: -webkit-fill-available;
-  padding-right: 15px;
-  padding-left: 15px;
+  // padding-right: 15px;
+  // padding-left: 15px;
   margin-right: 0;
   margin-left: 0;
   font-family: Lucida Bright, Georgia, serif;
@@ -68,10 +67,7 @@
 
   .section_two {
     box-sizing: border-box;
-    background-color: #000;
-    .container_message {
-      color: #fff;
-    }
+    margin-top: 25%;
   }
   // start loading
   .loading {
