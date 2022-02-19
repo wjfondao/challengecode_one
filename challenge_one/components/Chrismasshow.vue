@@ -37,7 +37,6 @@
 </template>
 
 <style scoped lang="scss">
-
 // start container content
 .imgleafangle {
   .leafangle {
@@ -62,9 +61,10 @@
 
   .starleft {
     display: flex;
-    width: 59px;
-    height: 57px;
+    width: 39px;
+    height: 37px;
     margin-left: auto;
+    animation: stars 10s linear infinite;
 
     /* Iphone */
     @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -79,6 +79,7 @@
     height: 83px;
     margin-left: auto;
     margin-right: auto;
+    animation: tree 15s linear infinite;
 
     /* Iphone */
     @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -92,6 +93,7 @@
     width: 51px;
     height: 91px;
     margin-right: auto;
+    animation: sock 15s linear infinite;
 
     /* Iphone */
     @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -102,10 +104,11 @@
 
   .starright {
     display: flex;
-    width: 59px;
-    height: 57px;
+    width: 39px;
+    height: 37px;
     margin-left: auto;
     margin-right: auto;
+    animation: stars 10s linear infinite;
 
     /* Iphone */
     @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -118,7 +121,12 @@
 // start: image santa with deer
 .imgcontent {
   display: flex;
+  position: relative;
   justify-content: center;
+  animation-name: santadeer;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+
   .imgsantadeer {
     width: 641px;
     height: 367px;
@@ -142,6 +150,57 @@
     @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
       font-size: 12px;
     }
+  }
+}
+
+// Keyframes Animation
+
+//start ainmation : Santa with deer
+@keyframes santadeer {
+  0% {
+    transform: translate(20px, 20px);    
+  }
+   50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: translate(20px, 20px);
+  }
+}
+
+//staet ainmation: stars
+@keyframes stars {
+  from {
+    transform: rotate(1deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+//start animatopn: treeangle
+@keyframes tree {
+  0% {
+    transform: rotate(-40deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-40deg);
+  }
+}
+
+// start animation: sock
+@keyframes sock {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(-5deg);
   }
 }
 </style>

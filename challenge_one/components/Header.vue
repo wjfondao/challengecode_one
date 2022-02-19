@@ -2,7 +2,7 @@
   <div class="header">
     <b-navbar variant="faded">
       <b-navbar-brand href="#">
-        <a href="../../" class="imglogo">
+        <a href="../pages/index.vue" class="imglogo">
           <img
             class="side-img ml-xl-4 mt-xl-1 ml-1"
             alt="Vue logo"
@@ -18,7 +18,6 @@
 
 <style scoped lange="scss">
 .header {
-  z-index: 1;
   background-color: #a5d7cc;
   background-image: url(http://www.transparenttextures.com/patterns/asfalt-light.png);
 }
