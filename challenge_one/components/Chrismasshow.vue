@@ -158,13 +158,13 @@
 //start ainmation : Santa with deer
 @keyframes santadeer {
   0% {
-    transform: translate(20px, 20px);    
+    transform: translate(20px, 10px);    
   }
    50% {
     transform: rotate(-5deg);
   }
   100% {
-    transform: translate(20px, 20px);
+    transform: translate(20px, 10px);
   }
 }
 
