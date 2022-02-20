@@ -1,21 +1,30 @@
 <template>
   <div class="container">
+     <!-- start header-->
     <div>
       <Header />
     </div>
     <!-- end header -->
-    <!-- start container content -->
+    <!-- start section one -->
     <section>
       <div class="container_content mt-xl-5">
         <Chrismasshow />
       </div>
     </section>
+    <!-- end section one -->
+    <!-- start section two -->
     <section class="section_two">
       <div class="container_message">
         <Chrismastext />
       </div>
     </section>
-    <!-- end container content -->
+    <!-- end section two -->
+     <!-- start footer-->
+    <div>
+      <Footer />
+    </div>
+     <!-- end footer-->
+    
     <!-- start loading -->
     <div class="loading">
       <div class="flex">
@@ -37,6 +46,7 @@
   // padding-left: 15px;
   margin-right: 0;
   margin-left: 0;
+  padding: 0;
   font-family: Lucida Bright, Georgia, serif;
   box-sizing: border-box;
   overflow: hidden;
