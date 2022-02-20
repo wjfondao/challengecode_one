@@ -1,8 +1,8 @@
 <template>
   <div class="header">
-    <b-navbar variant="faded">
-      <b-navbar-brand href="#">
-        <a href="../../" class="imglogo">
+    <b-navbar >
+      <b-navbar-brand href="../../" >
+        <a class="imglogo">
           <img
             class="side-img ml-xl-4 mt-xl-1 ml-1"
             alt="Vue logo"

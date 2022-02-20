@@ -1,5 +1,8 @@
 <template>
   <div class="container row">
+    <div>
+      <Header />
+    </div>
     <div class="pageone col-xl">
       <div class="imagebell">
         <img class="bell" src="../assets/images/bell.png" />
@@ -17,7 +20,7 @@
       </div>
       <!--  start: Button-->
       <div class="signbutton mt-5">
-        <b-button pill class="btsignin mr-4" href="../../signup"
+        <b-button pill class="btsignin mr-4" href="../../signin"
           >Sign in</b-button
         >
         <b-button pill class="btsignup" href="../../signup">Sign up</b-button>

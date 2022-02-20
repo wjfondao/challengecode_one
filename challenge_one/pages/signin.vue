@@ -1,19 +1,24 @@
 <template>
-  <div class="container row">
-    <div class="partone col-xl-5 col-lg-12 col-md-12 col-sm-12">
-      <div class="texttitle mt-5">
-        <p id="textfirst">Hey,</p>
-        <p id="textfirst">it’s Christmas time</p>
-        <p id="textsecond">Events & gifts by wjbenz</p>
-      </div>
-
-      <div class="imageshow">
-        <img class="Christmas-img" src="../assets/images/Christmas.svg" />
-      </div>
+  <div>
+    <div>
+      <Header />
     </div>
+    <div class="container row">
+      <div class="partone col-xl-5 col-lg-12 col-md-12 col-sm-12">
+        <div class="texttitle mt-5">
+          <p id="textfirst">Hey,</p>
+          <p id="textfirst">it’s Christmas time</p>
+          <p id="textsecond">Events & gifts by wjbenz</p>
+        </div>
 
-    <div class="parttwo col-xl-7 col-lg-12 col-md-12 col-sm-12">
-      <Cardsignin />
+        <div class="imageshow">
+          <img class="Christmas-img" src="../assets/images/Christmas.svg" />
+        </div>
+      </div>
+
+      <div class="parttwo col-xl-7 col-lg-12 col-md-12 col-sm-12">
+        <Cardsignin />
+      </div>
     </div>
   </div>
 </template>
