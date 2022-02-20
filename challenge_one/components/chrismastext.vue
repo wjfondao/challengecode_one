@@ -1,10 +1,15 @@
 <template>
   <div class="mt-5 container row">
+    <!-- start card -->
     <div class="card_message">
-      <div class="imagecard">
+      <!-- start images top in card -->
+      <div class="imagecardtop">
         <img class="imgcandy" src="../assets/images/candystick.png" />
-        <img class="imgstar" src="../assets/images/star.png" />
+        <img class="imgstarone" src="../assets/images/star.png" />
       </div>
+      <!-- end images top in card -->
+
+      <!-- start Card body -->
       <b-card>
         <div class="imgstamp col-12">
           <img
@@ -25,7 +30,20 @@
           </b-card-text>
         </div>
       </b-card>
+      <!-- end Card body -->
+
+      <!-- start images bottom in card -->
+      <div class="imagecardbottom">
+        <img class="imgtree" src="../assets/images/christmastree.png" />
+        <img class="imgcandles" src="../assets/images/candles.png" />
+        <img
+          class="imghandswithgift"
+          src="../assets/images/handswithgift.png"
+        />
+      </div>
+      <!-- end images bottom in card -->
     </div>
+    <!-- end card -->
   </div>
 </template>
 
@@ -34,41 +52,10 @@
   font-family: 'Gloria Hallelujah', cursive !important;
   font-size: 18px;
 
-// start iamge : candy
-  .imgcandy {
-    display: flex;
-    position: absolute;
-    z-index: 1;
-    margin-top: -3rem;
-    margin-left: -2rem;
-    width: 70px;
-    height: 150px;
-
-    /* Iphone */
-    @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
-      width: 70px;
-      height: 150px;
-    }
-
-    /* Ipad */
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-      width: 70px;
-      height: 150px;
-    }
-  }
-
-  // start image: snow flake
-  .imgstar {
-    z-index: 1;
-    width: 32px;
-    height: 32px;
-    float: right;
-    margin-right: -3rem;
-  }
-
   .card_message {
     margin-left: 25%;
     margin-right: 25%;
+    z-index: 0;
 
     /* Iphone */
     @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -82,7 +69,103 @@
       margin-right: 15%;
     }
 
+    // start Images-------------------
+    // start iamge : candy
+    .imgcandy {
+      display: flex;
+      position: absolute;
+      z-index: 1;
+      margin-top: -3rem;
+      margin-left: -2rem;
+      width: 70px;
+      height: 150px;
+
+      /* Iphone */
+      @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+        margin-top: -1.25rem;
+        margin-left: -1rem;
+        width: 34px;
+        height: 76px;
+      }
+
+      /* Ipad */
+      @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+        width: 70px;
+        height: 150px;
+      }
+    }
+
+    // start image: star
+    .imgstarone {
+      z-index: 1;
+      width: 32px;
+      height: 32px;
+      float: right;
+      margin-right: -3rem;
+      animation: stars 10s linear infinite;
+    }
+
+    // start image: tree
+    .imgtree {
+      display: flex;
+      position: absolute;
+      z-index: 1;
+      width: 81px;
+      height: 201px;
+      margin-top: -11rem;
+      margin-left: -3rem;
+
+      /* Iphone */
+      @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+        margin-top: -5.5rem;
+        margin-left: -1rem;
+        width: 40px;
+        height: 102px;
+      }
+    }
+
+    // start image: candles
+    .imgcandles {
+      display: flex;
+      position: absolute;
+      z-index: 1;
+      width: 119px;
+      height: 114px;
+      margin-top: -5rem;
+      margin-left: 2rem;
+
+      /* Iphone */
+      @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+        margin-top: -2.5rem;
+        width: 58px;
+        height: 58px;
+      }
+    }
+
+    //start image: hand with gift
+    .imghandswithgift {
+      display: flex;
+      position: relative;
+      float: right;
+      z-index: 1;
+      width: 119px;
+      height: 150px;
+      margin-top: -6rem;
+      margin-right: -2rem;
+
+      /* Iphone */
+      @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+        margin-top: -3rem;
+        margin-right: -1rem;
+        width: 59px;
+        height: 76px;
+      }
+    }
+    // end Images-------------------
+
+    // start Card-------------------
     .card-body {
+      padding: 5rem 0.75rem;
       background-color: #edead9;
       background-image: url('https://www.transparenttextures.com/patterns/concrete-wall.png');
 
@@ -116,6 +199,16 @@
         }
       }
     }
+  }
+}
+
+//staet ainmation: stars
+@keyframes stars {
+  from {
+    transform: rotate(1deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 </style>
