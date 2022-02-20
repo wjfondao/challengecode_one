@@ -3,7 +3,7 @@
     <!-- Footer -->
     <footer
       class="text-center text-lg-start mt-5"
-      style="background-color: #129277; color: #fff"
+      style="background-color: #129277; color: #fff; letter-spacing: 1px; "
     >
       <!-- Section: Social media -->
       <section
@@ -41,7 +41,7 @@
                 </a>
                 <p>
                   Hi, I'm wjbenz, a web developer and illustrator with a passion
-                  for both.
+                  for both .
                 </p>
               </div>
             </div>
