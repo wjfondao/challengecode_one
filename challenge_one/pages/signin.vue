@@ -29,17 +29,7 @@ export default {}
 
 <style scoped lang="scss">
 .container {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  min-height: 100vh;
-  min-width: -webkit-fill-available;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: bottom;
-  background-size: 100%;
-  background-color: #a5d7cc;
-
+ 
   .partone {
     padding: 10px;
 
