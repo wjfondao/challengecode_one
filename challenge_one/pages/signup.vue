@@ -3,7 +3,7 @@
     <div>
       <Header />
     </div>
-    <div class="container row">
+    <div class="containerbody row">
       <div class="partone col-xl-5 col-lg-12 col-md-12 col-sm-12">
         <div class="texttitle mt-5">
           <p id="textfirst">Hey,</p>
@@ -28,17 +28,7 @@ export default {}
 </script>
 
 <style scoped lang="scss">
-.container {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  min-height: 100vh;
-  min-width: -webkit-fill-available;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: bottom;
-  background-size: 100%;
-  background-color: #a5d7cc;
+.containerbody {
 
   .partone {
     padding: 10px;

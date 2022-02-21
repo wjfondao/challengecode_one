@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="containerchrismas">
      <!-- start header-->
     <div>
       <Header />
@@ -20,7 +20,7 @@
     </section>
     <!-- end section two -->
      <!-- start footer-->
-    <div>
+    <div class="">
       <Footer />
     </div>
      <!-- end footer-->
@@ -39,7 +39,7 @@
 </template>
 
 <style scoped lang="scss">
-.container {
+.containerchrismas {
   min-height: 100vh;
   min-width: -webkit-fill-available;
   // padding-right: 15px;
@@ -78,6 +78,7 @@
   .section_two {
     box-sizing: border-box;
     margin-top: 25%;
+    margin-bottom: 25%;
   }
   // start loading
   .loading {

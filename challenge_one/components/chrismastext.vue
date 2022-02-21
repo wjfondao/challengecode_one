@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-5 container row">
+  <div class=" mt-5 containercard row">
     <!-- start card -->
     <div class="card_message">
       <!-- start images top in card -->
@@ -48,7 +48,7 @@
 </template>
 
 <style scoped lang="scss">
-.container {
+.containercard {
   font-family: 'Gloria Hallelujah', cursive !important;
   font-size: 18px;
 

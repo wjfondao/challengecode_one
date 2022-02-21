@@ -3,7 +3,7 @@
     <div>
       <Header />
     </div>
-    <div class="container row">
+    <div class="containerbody row">
       <div class="partone col-xl-5 col-lg-12 col-md-12 col-sm-12">
         <div class="texttitle mt-5">
           <p id="textfirst">Hey,</p>
@@ -28,7 +28,7 @@ export default {}
 </script>
 
 <style scoped lang="scss">
-.container {
+.containerbody {
  
   .partone {
     padding: 10px;

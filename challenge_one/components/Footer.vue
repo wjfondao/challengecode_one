@@ -3,7 +3,7 @@
     <!-- Footer -->
     <footer
       class="text-center text-lg-start mt-5"
-      style="background-color: #129277; color: #fff; letter-spacing: 1px; "
+      style="background-color: #129277; color: #fff; letter-spacing: 1px"
     >
       <!-- Section: Social media -->
       <section
@@ -64,7 +64,7 @@
                 <a
                   class="text-reset fw-bold"
                   href="https://wannathis.gumroad.com/l/hZEZt"
-                  style="font-size: 16px; "
+                  style="font-size: 16px"
                   >Wannathis
                 </a>
               </p>
@@ -73,7 +73,7 @@
                 <a
                   class="text-reset fw-bold"
                   href="https://drawkit.com/product/christmas-thanksgiving-illustrations"
-                  style="font-size: 16px; "
+                  style="font-size: 16px"
                   >DrawKit
                 </a>
               </p>
@@ -101,5 +101,5 @@
 <style scoped lang="scss">
 .bg-light {
   background-color: #129277 !important;
-}
+  }
 </style>

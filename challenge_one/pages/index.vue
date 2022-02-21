@@ -1,5 +1,5 @@
 <template>
-  <div class="container row">
+  <div class="containerbody row">
     <div>
       <Header />
     </div>
@@ -42,15 +42,7 @@
 </template>
 
 <style scoped lang="scss">
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  min-height: 100vh;
-  min-width: -webkit-fill-available;
-  margin: 0;
-  flex-direction: row;
-  background-color: #a5d7cc;
-  font-family: Lucida Bright, Georgia, serif;
+.containerbody {
 
   @media screen and (max-width: 991px) {
     overflow: hidden;
