@@ -60,6 +60,26 @@
   </div>
 </template>
 
+<script>
+
+import { createUserWithEmailAndPassword }  from 'firebase/auth'
+import { fireAuth } from '../services/fireinit'
+
+export default {
+  data(){
+    return {
+      email: "",
+      password: ""
+    }
+  },
+  method: {
+    signUp(){
+       createUserWithEmailAndPassword(fireAuth, this.email, this.password);
+    }
+  } 
+}
+</script>
+
 <style scoped lang="scss">
 @mixin border-radius {
   border-top-right-radius: 2.5rem;

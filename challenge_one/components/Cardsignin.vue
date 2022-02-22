@@ -36,14 +36,14 @@
           <div class="mt-3 col-12">
             <p>Email Address</p>
             <b-form-input
-              v-model="text"
+              v-model="email"
               placeholder="Email Address"
             ></b-form-input>
           </div>
           <!-- input: Password -->
           <div class="mt-3 col-12">
             <p>Password</p>
-            <b-form-input v-model="text" placeholder="Password"></b-form-input>
+            <b-form-input v-model="password" placeholder="Password"></b-form-input>
           </div>
         </div>
         <!-- Button Sumit-->
@@ -57,6 +57,7 @@
               border-radius: 8px; ;
             "
             block
+            @click="signIn"
           >
             Sign in
           </b-button>
@@ -85,6 +86,28 @@
     <!-- End Card Sign up -->
   </div>
 </template>
+<script>
+
+import { signInWithEmailAndPassword }  from 'firebase/auth'
+import { fireAuth } from '../services/fireinit'
+
+export default {
+  data(){
+    return {
+      email: "",
+      password: ""
+    }
+  },
+  method: {
+    signIn(){
+       this.console.log(this.email, this.password);
+       signInWithEmailAndPassword(fireAuth, this.email, this.password);
+    }
+  } 
+}
+</script>
+
+
 
 <style scoped lang="scss">
 @mixin border-radius {
