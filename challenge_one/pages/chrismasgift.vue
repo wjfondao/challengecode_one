@@ -39,6 +39,8 @@
 </template>
 
 <style scoped lang="scss">
+@import "../assets/scss/_variables.scss";
+
 .containerchrismas {
   min-height: 100vh;
   min-width: -webkit-fill-available;
@@ -50,10 +52,7 @@
   font-family: Lucida Bright, Georgia, serif;
   box-sizing: border-box;
   overflow: hidden;
-  background-color: #a5d7cc;
-  background-image: url(http://www.transparenttextures.com/patterns/asfalt-light.png);
 
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   .section {
     display: flex;
     height: 101vh;
@@ -87,7 +86,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: #129277;
+    background: $foo-green-ink;
     display: flex;
     justify-content: center;
     align-items: center;
