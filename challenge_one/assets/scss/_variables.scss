@@ -2,4 +2,7 @@
   forexcample a { $boo-bar: 0; } a { $fooBar: 0; }
 */
 // color
-$foo-GreenGray: #a5d7cc;
+$foo-green-gray: hsl(167, 38%, 75%) !default;
+$foo-green-ink: hsl(167, 78%, 32%) !default;
+
+// $black:        hsl(0, 0%, 4%) !default;
