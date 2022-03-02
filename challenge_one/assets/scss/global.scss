@@ -1,8 +1,21 @@
 @import "_variables";
 
+html {
+     box-sizing: border-box;
+    overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 body {
+    font-family: $foo-family-sans-serif;
     background-color: $foo-green-gray;
     background-image: url(http://www.transparenttextures.com/patterns/asfalt-light.png);
 
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
+

@@ -120,7 +120,7 @@
     }
 
     h2 {
-      color: #000;
+      color: $foo-black;
     }
 
     .bar {

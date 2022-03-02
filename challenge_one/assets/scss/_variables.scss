@@ -5,4 +5,9 @@
 $foo-green-gray: hsl(167, 38%, 75%) !default;
 $foo-green-ink: hsl(167, 78%, 32%) !default;
 
-// $black:        hsl(0, 0%, 4%) !default;
+$foo-black: hsl(0, 0%, 4%) !default;
+
+$foo-white: hsl(0, 0%, 100%) !default;
+
+// Typography
+$foo-family-sans-serif: "Lucida Bright", "Georgia", "serif";
