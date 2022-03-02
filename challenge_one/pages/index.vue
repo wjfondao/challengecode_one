@@ -42,15 +42,24 @@
 </template>
 
 <style scoped lang="scss">
-.containerbody {
+@import '../assets/scss/_variables.scss';
+@import '../assets/scss/styles.scss';
 
+/* ------------ Extend/Inheritance --------- */
+// This is css text tiltle and subtitle
+%text-title {
+  font-weight: bold;
+  color: $foo-white;
+  text-align: center;
+}
+
+.containerbody {
   @media screen and (max-width: 991px) {
     overflow: hidden;
   }
   // Start : Page one
   .pageone {
-    margin-top: auto;
-    margin-bottom: auto;
+    @extend %margin-page;
 
     /* Ipad */
     @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -58,8 +67,7 @@
     }
 
     .imagebell {
-      display: flex;
-      justify-content: center;
+      @extend %flex-jc-center;
       .bell {
         width: 100px;
         height: 150px;
@@ -78,10 +86,8 @@
       }
     }
     .textitle {
-      font-weight: bold;
       font-size: 89px;
-      color: white;
-      text-align: center;
+      @extend %text-title;
 
       /* Ipad */
       @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -98,9 +104,7 @@
       }
     }
     .subtitle {
-      font-weight: bold;
-      color: white;
-      text-align: center;
+      @extend %text-title;
       p {
         font-size: 18px;
         margin-bottom: 0.16rem;
@@ -117,9 +121,8 @@
     }
     // start : set button
     .signbutton {
-      display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      @extend %flex-jc-center;
 
       /* Iphone */
       @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -127,12 +130,8 @@
       }
 
       .btsignin {
-        font-weight: bold;
-        padding: 0.75rem 3.1rem 0.75rem 3.1rem;
-        color: #edead9;
-        background-color: #129277;
-        border-color: transparent;
-        font-size: 18px;
+        color: $foo-light-grayish-yellow;
+        background-color: $foo-green-ink;
 
         /* Iphone */
         @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -142,12 +141,8 @@
         }
       }
       .btsignup {
-        font-weight: bold;
-        padding: 0.75rem 3.1rem 0.75rem 3.1rem;
-        color: #129277;
-        background-color: #edead9;
-        border-color: transparent;
-        font-size: 18px;
+        color: $foo-green-ink;
+        background-color: $foo-light-grayish-yellow;
 
         /* Iphone */
         @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -164,10 +159,8 @@
 
   // Start : Page two
   .pagetwo {
-    display: flex;
-    justify-content: center;
-    margin-top: auto;
-    margin-bottom: auto;
+    @extend %flex-jc-center;
+    @extend %margin-page;
 
     //start: image calendar
     .calendar {
