@@ -48,8 +48,10 @@
 </template>
 
 <style scoped lang="scss">
+@import "../assets/scss/_variables";
+
 .containercard {
-  font-family: 'Gloria Hallelujah', cursive !important;
+  font-family: $foo-family-letter !important;
   font-size: 18px;
 
   .card_message {
@@ -166,7 +168,7 @@
     // start Card-------------------
     .card-body {
       padding: 5rem 0.75rem;
-      background-color: #edead9;
+      background-color: $foo-light-grayish-yellow;
       background-image: url('https://www.transparenttextures.com/patterns/concrete-wall.png');
 
       /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */

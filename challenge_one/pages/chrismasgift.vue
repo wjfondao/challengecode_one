@@ -44,12 +44,9 @@
 .containerchrismas {
   min-height: 100vh;
   min-width: -webkit-fill-available;
-  // padding-right: 15px;
-  // padding-left: 15px;
   margin-right: 0;
   margin-left: 0;
   padding: 0;
-  font-family: Lucida Bright, Georgia, serif;
   box-sizing: border-box;
   overflow: hidden;
 
