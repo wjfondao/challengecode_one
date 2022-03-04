@@ -1,44 +1,46 @@
 <template>
-  <div class="containerbody row">
+  <div class="containerbody">
     <div>
       <Header />
     </div>
-    <!-- start: section one -->
-    <div class="sectionone col-xl">
-      <div class="imagebell">
-        <img class="bell" src="../assets/images/bell.png" />
+    <div class="row">
+      <!-- start: section one -->
+      <div class="sectionone col-xl">
+        <div class="imagebell">
+          <img class="bell" src="../assets/images/bell.png" />
+        </div>
+        <!--  start: text marry christmas -->
+        <div class="textitle">
+          <p>Marry</p>
+          <p>Christmas</p>
+        </div>
+        <div class="subtitle mt-4">
+          <p>
+            Season’s Greetings – May love and laughter fill your life at
+            Christmas and throughout the New Year.
+          </p>
+        </div>
+        <!--  start: Button-->
+        <div class="signbutton mt-5">
+          <b-button pill class="btsignin mr-4" href="../../signin"
+            >Sign in</b-button
+          >
+          <b-button pill class="btsignup" href="../../signup">Sign up</b-button>
+        </div>
       </div>
-      <!--  start: text marry christmas -->
-      <div class="textitle">
-        <p>Marry</p>
-        <p>Christmas</p>
+      <!-- start: section two -->
+      <div class="sectiontwo col-xl">
+        <!--  start: image calendar-->
+        <div>
+          <img class="calendar" src="../assets/images/calendar_25dec.png" />
+        </div>
+        <!--  start: image gift-->
+        <div class="">
+          <img class="imggift" src="../assets/images/gift.png" />
+        </div>
+        <!--  start: image santa wit htree-->
+        <img class="santawithtree" src="../assets/images/santawithtree.png" />
       </div>
-      <div class="subtitle mt-4">
-        <p>
-          Season’s Greetings – May love and laughter fill your life at Christmas
-          and throughout the New Year.
-        </p>
-      </div>
-      <!--  start: Button-->
-      <div class="signbutton mt-5">
-        <b-button pill class="btsignin mr-4" href="../../signin"
-          >Sign in</b-button
-        >
-        <b-button pill class="btsignup" href="../../signup">Sign up</b-button>
-      </div>
-    </div>
-    <!-- start: section two -->
-    <div class="sectiontwo col-xl">
-      <!--  start: image calendar-->
-      <div>
-        <img class="calendar" src="../assets/images/calendar_25dec.png" />
-      </div>
-      <!--  start: image gift-->
-      <div class="">
-        <img class="imggift" src="../assets/images/gift.png" />
-      </div>
-      <!--  start: image santa wit htree-->
-      <img class="santawithtree" src="../assets/images/santawithtree.png" />
     </div>
   </div>
 </template>
@@ -55,18 +57,24 @@
   text-align: center;
 }
 
-
 .containerbody {
-  @media screen and (max-width: 991px) {
+  // Extra small devices (portrait phones, less than 576px)
+  @media only screen and (max-width: 575.98px) {
     overflow: hidden;
   }
   // Start : Page one
   .sectionone {
-    @extend %margin-page;
+    margin-top: 3rem;
+    margin-bottom: auto;
 
-    /* Ipad */
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
-      margin-top: 5rem;
+    // Large devices (desktops, 992px and up)
+    @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+      margin-top: 3rem;
+    }
+
+    // Medium devices (tablets, 768px and up)
+    @media only screen and (min-width: 768px) and (max-width: 991.98px) {
+      margin-top: 3rem;
     }
 
     .imagebell {
@@ -75,30 +83,41 @@
         width: 100px;
         height: 150px;
 
-        /* Ipad */
-        @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
+        // Large devices (desktops, 992px and up)
+        @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
           width: 80px;
           height: 100px;
         }
 
-        /* Iphone  and mibile */
-        @media only screen and (min-device-width: 1px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+        // Medium devices (tablets, 768px and up)
+        @media only screen and (min-width: 768px) and (max-width: 991.98px) {
+          width: 80px;
+          height: 100px;
+        }
+
+        // Small devices (landscape phones, less than 767.98px)
+        @media only screen and (max-width: 767.98px) {
           width: 70px;
           height: 90px;
         }
       }
     }
     .textitle {
-      font-size: 89px;
+      font-size: 64px;
       @extend %text-title;
 
-      /* Ipad */
-      @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
+      // Large devices (desktops, 992px and up)
+      @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
         font-size: 62px;
       }
 
-      /* Iphone  and mibile */
-      @media only screen and (min-device-width: 1px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+      // Medium devices (tablets, 768px and up)
+      @media only screen and (min-width: 768px) and (max-width: 991.98px) {
+        font-size: 62px;
+      }
+
+      // Small devices (landscape phones, less than 767.98px)
+      @media only screen and (max-width: 767.98px) {
         font-size: 48px;
       }
 
@@ -114,8 +133,8 @@
         margin-right: 5rem;
         margin-left: 5rem;
 
-        /* Iphone  and mibile */
-        @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+        // Small devices (landscape phones, less than 767.98px)
+        @media only screen and (max-width: 767.98px) {
           font-size: 14px;
           margin-right: 0.15rem;
           margin-left: 0.15rem;
@@ -127,8 +146,8 @@
       flex-wrap: wrap;
       @extend %flex-jc-center;
 
-      /* Iphone  and mibile */
-      @media only screen and (min-device-width: 1px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+      // Small devices (landscape phones, less than 767.98px)
+      @media only screen and (max-width: 767.98px) {
         margin-top: 1rem !important;
       }
 
@@ -136,8 +155,8 @@
         color: $foo-light-grayish-yellow;
         background-color: $foo-green-ink;
 
-        /* Iphone  and mibile */
-        @media only screen and (min-device-width: 1px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+        // Small devices (landscape phones, less than 767.98px)
+        @media only screen and (max-width: 767.98px) {
           font-size: 14px;
           margin-left: 1.5rem !important;
           margin-top: 14px !important;
@@ -147,8 +166,8 @@
         color: $foo-green-ink;
         background-color: $foo-light-grayish-yellow;
 
-        /* Iphone  and mibile */
-        @media only screen and (min-device-width: 1px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+        // Small devices (landscape phones, less than 767.98px)
+        @media only screen and (max-width: 767.98px) {
           display: flex;
           flex-wrap: wrap;
           font-size: 14px;
@@ -162,8 +181,9 @@
 
   // Start : Page two
   .sectiontwo {
+    margin-top: auto;
+    margin-bottom: auto;
     @extend %flex-jc-center;
-    @extend %margin-page;
 
     //start: image calendar
     .calendar {
@@ -203,14 +223,14 @@
         }
       }
 
-      /* Ipad */
-      @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
+      // Medium devices (tablets, 768px and up)
+      @media only screen and (min-width: 768px) and (max-width: 991.98px) {
         width: 50px;
         height: 50px;
       }
 
-      /* Iphone  and mibile */
-      @media only screen and (min-device-width: 1px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+      // Small devices (landscape phones, less than 767.98px)
+      @media only screen and (max-width: 767.98px) {
         margin-top: 1rem;
         width: 40px;
         height: 40px;
@@ -260,22 +280,22 @@
         }
       }
 
-      /* Ipadpro */
-      @media only screen and (min-device-width: 1023px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+      // Large devices (desktops, 992px and up)
+      @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
         margin-top: 26rem;
         margin-left: 0.5rem;
       }
 
-      /* Ipad */
-      @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
+      // Medium devices (tablets, 768px and up)
+      @media only screen and (min-width: 768px) and (max-width: 991.98px) {
         margin-top: 18rem;
         margin-left: 0.5rem;
         width: 50px;
         height: 50px;
       }
 
-      /* Iphone  and mibile */
-      @media only screen and (min-device-width: 1px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+      // Small devices (landscape phones, less than 767.98px)
+      @media only screen and (max-width: 767.98px) {
         margin-top: 11rem;
         margin-left: 0.5rem;
         width: 40px;
@@ -289,22 +309,22 @@
       height: 780px;
       margin-top: 1rem;
 
-      /* Ipadpro */
-      @media only screen and (min-device-width: 1023px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+      // Large devices (desktops, 992px and up)
+      @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
         width: 500px;
         height: 600px;
       }
 
-      /* Ipad */
-      @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
+      // Medium devices (tablets, 768px and up)
+      @media only screen and (min-width: 768px) and (max-width: 991.98px) {
         width: 300px;
         height: 350px;
         margin-top: 2rem;
         margin-bottom: 3rem;
       }
 
-      /* Iphone  and mibile */
-      @media only screen and (min-device-width: 1px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+      // Small devices (landscape phones, less than 767.98px)
+      @media only screen and (max-width: 767.98px) {
         width: 200px;
         height: 250px;
         margin-bottom: 1rem;

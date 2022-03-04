@@ -15,10 +15,3 @@
     </b-navbar>
   </div>
 </template>
-
-<style scoped lange="scss">
-.header {
-  background-color: #a5d7cc;
-  background-image: url(http://www.transparenttextures.com/patterns/asfalt-light.png);
-}
-</style>

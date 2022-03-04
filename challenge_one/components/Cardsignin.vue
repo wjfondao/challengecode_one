@@ -7,25 +7,8 @@
         <!--Title text -->
         <p id="title">Sign in</p>
         <!-- Button: Google-->
-        <div class="row mt-4 mb-4 buttongoogle">
-          <div class="col-md-12">
-            <a
-              class="
-                btn btn-lg btn-google btn-block
-                text-uppercase
-                btn-outline
-                pt-2
-                pb-2
-              "
-              href="#"
-            >
-              <img
-                src="https://img.icons8.com/color/20/000000/google-logo.png"
-                class="mr-2"
-              />
-              Sign in with Google</a
-            >
-          </div>
+        <div class="row mt-4 mb-4">
+          <Buttongoogle />
         </div>
         <!-- Text: OR -->
         <div class="textlinebehind">
@@ -110,7 +93,9 @@ export default {
 
 
 <style scoped lang="scss">
-%border-radius {
+@import '../assets/scss/_variables.scss';
+
+@mixin border-radius {
   border-top-right-radius: 2.5rem;
   border-bottom-left-radius: 0 !important;
 }
@@ -163,17 +148,7 @@ export default {
       }
     }
 
-    /* Button Google */
-    .buttongoogle {
-      .text-uppercase {
-        text-transform: none !important;
-      }
-      .btn {
-        font-size: 14px !important;
-        border: 1px solid $foo-light-grayish-yellow;
-        border-radius: 8px;
-      }
-    }
+  
 
     /* text element with line behind text */
     .textlinebehind {
