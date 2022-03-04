@@ -110,7 +110,7 @@ export default {
 
 
 <style scoped lang="scss">
-@mixin border-radius {
+%border-radius {
   border-top-right-radius: 2.5rem;
   border-bottom-left-radius: 0 !important;
 }
@@ -118,23 +118,13 @@ export default {
 .maincard {
   min-height: 100vh;
   min-width: -webkit-fill-available;
-  background-color: white;
+  background-color: $foo-white;
   border-top-left-radius: 2.5rem;
   border-bottom-left-radius: 2.5rem;
   border: none;
 
   /* Ipadpro */
-  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
-    @include border-radius();
-  }
-
-  /* Ipad */
-  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-    @include border-radius();
-  }
-
-  /* Iphone */
-  @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+  @media only screen and (min-device-width: 1px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
     @include border-radius();
   }
 
@@ -180,7 +170,7 @@ export default {
       }
       .btn {
         font-size: 14px !important;
-        border: 1px solid #e8e5e5;
+        border: 1px solid $foo-light-grayish-yellow;
         border-radius: 8px;
       }
     }
@@ -190,10 +180,10 @@ export default {
       p {
         text-align: center;
         position: relative;
-        background-color: #fff;
+        background-color: $foo-white;
 
         .border {
-          border-bottom: 3px solid #999;
+          border-bottom: 3px solid $foo-dark-gray;
           position: absolute;
           width: 100%;
           left: 0;
@@ -203,7 +193,7 @@ export default {
         }
 
         .textor {
-          background-color: #fff;
+          background-color: $foo-white;
           position: relative;
           z-index: 2;
           padding: 10px;
@@ -214,8 +204,8 @@ export default {
 
     .formgroup {
       .form-control {
-        background-color: #f5f6f5;
-        border: 1px solid #e8e5e5;
+        background-color: $foo-gray-nurse;
+        border: 1px solid $foo-light-grayish-yellow;
         border-radius: 8px;
       }
 
@@ -229,7 +219,7 @@ export default {
       font-size: 14px;
       a {
         font-weight: bold;
-        color: #6fc5b2;
+        color: $foo-green-gray;
       }
 
       /* Iphone */
@@ -244,7 +234,7 @@ export default {
       justify-content: space-between;
       a {
         font-weight: bold;
-        color: #6fc5b2;
+        color: $foo-green-gray;
       }
 
       .custom-control-label { 
