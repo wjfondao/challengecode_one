@@ -3,7 +3,8 @@
     <div>
       <Header />
     </div>
-    <div class="pageone col-xl">
+    <!-- start: section one -->
+    <div class="sectionone col-xl">
       <div class="imagebell">
         <img class="bell" src="../assets/images/bell.png" />
       </div>
@@ -26,7 +27,8 @@
         <b-button pill class="btsignup" href="../../signup">Sign up</b-button>
       </div>
     </div>
-    <div class="pagetwo col-xl">
+    <!-- start: section two -->
+    <div class="sectiontwo col-xl">
       <!--  start: image calendar-->
       <div>
         <img class="calendar" src="../assets/images/calendar_25dec.png" />
@@ -53,12 +55,13 @@
   text-align: center;
 }
 
+
 .containerbody {
   @media screen and (max-width: 991px) {
     overflow: hidden;
   }
   // Start : Page one
-  .pageone {
+  .sectionone {
     @extend %margin-page;
 
     /* Ipad */
@@ -158,7 +161,7 @@
   }
 
   // Start : Page two
-  .pagetwo {
+  .sectiontwo {
     @extend %flex-jc-center;
     @extend %margin-page;
 
