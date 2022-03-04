@@ -11,7 +11,7 @@
           <p id="textsecond">Events & gifts by wjbenz</p>
         </div>
 
-        <div class="imageshow">
+        <div class="img_register">
           <img class="Christmas-img" src="../assets/images/Christmas.svg" />
         </div>
       </div>
@@ -28,6 +28,8 @@ export default {}
 </script>
 
 <style scoped lang="scss">
+@import '../assets/scss/images/img_register.scss';
+
 .containerbody {
 
   .partone {
@@ -63,64 +65,9 @@ export default {}
     }
   }
 
-  .imageshow {
-    .Christmas-img {
-      z-index: 2;
-      position: absolute;
-      bottom: 0%;
-      left: 35%;
-      height: 650px;
-
-      /* deketop */
-      @media only screen and (min-device-width: 1367px) and (max-device-width: 1639px) and (-webkit-min-device-pixel-ratio: 2) {
-        height: 590px;
-        left: 30% !important;
-      }
-
-      /* deketop2 */
-      @media only screen and (min-device-width: 1200px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
-        height: 500px !important;
-        left: 11rem !important;
-        top: 42% !important;
-      }
-
-      /* deketop3 */
-      @media only screen and (min-device-width: 1025px) and (max-device-width: 1199px) and (-webkit-min-device-pixel-ratio: 2) {
-        height: 400px !important;
-        left: 35rem !important;
-        top: 25% !important;
-      }
-
-      /* Ipadpro */
-      @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
-        height: 400px;
-        left: 35rem;
-        top: 60%;
-      }
-
-      /* Ipad */
-      @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-        height: 350px;
-        left: 23rem;
-        top: 70%;
-      }
-
-      /* Iphone */
-      @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
-        height: 170px;
-        left: 10rem;
-        top: 85%;
-      }
-    }
-  }
 
   .parttwo {
     padding: 0;
-
-    /* Ipadpro */
-    // @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
-    //   padding-top: 18rem;
-    // }
 
     /* Ipad */
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {

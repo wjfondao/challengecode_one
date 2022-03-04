@@ -122,7 +122,6 @@ export default {
   border-top-left-radius: 2.5rem;
   border-bottom-left-radius: 2.5rem;
   border: none;
-  font-family: Lucida Bright, Georgia, serif;
 
   /* Ipadpro */
   @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -139,6 +138,7 @@ export default {
     @include border-radius();
   }
 
+
   /* Start form group */
   .formsignin {
     padding: 8rem 10rem 0 10rem;
@@ -154,8 +154,12 @@ export default {
     }
 
     /* Iphone */
-    @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+    @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
       padding: 2rem 2rem 0 2rem;
+    }
+
+    @media only screen and (max-device-width: 280px) {
+      padding: 0;
     }
 
     /* Text title */

@@ -81,8 +81,8 @@
           height: 100px;
         }
 
-        /* Iphone */
-        @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+        /* Iphone  and mibile */
+        @media only screen and (min-device-width: 1px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
           width: 70px;
           height: 90px;
         }
@@ -97,8 +97,8 @@
         font-size: 62px;
       }
 
-      /* Iphone */
-      @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+      /* Iphone  and mibile */
+      @media only screen and (min-device-width: 1px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
         font-size: 48px;
       }
 
@@ -114,7 +114,7 @@
         margin-right: 5rem;
         margin-left: 5rem;
 
-        /* Iphone */
+        /* Iphone  and mibile */
         @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
           font-size: 14px;
           margin-right: 0.15rem;
@@ -127,8 +127,8 @@
       flex-wrap: wrap;
       @extend %flex-jc-center;
 
-      /* Iphone */
-      @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+      /* Iphone  and mibile */
+      @media only screen and (min-device-width: 1px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
         margin-top: 1rem !important;
       }
 
@@ -136,8 +136,8 @@
         color: $foo-light-grayish-yellow;
         background-color: $foo-green-ink;
 
-        /* Iphone */
-        @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+        /* Iphone  and mibile */
+        @media only screen and (min-device-width: 1px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
           font-size: 14px;
           margin-left: 1.5rem !important;
           margin-top: 14px !important;
@@ -147,8 +147,8 @@
         color: $foo-green-ink;
         background-color: $foo-light-grayish-yellow;
 
-        /* Iphone */
-        @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+        /* Iphone  and mibile */
+        @media only screen and (min-device-width: 1px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
           display: flex;
           flex-wrap: wrap;
           font-size: 14px;
@@ -209,8 +209,8 @@
         height: 50px;
       }
 
-      /* Iphone */
-      @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+      /* Iphone  and mibile */
+      @media only screen and (min-device-width: 1px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
         margin-top: 1rem;
         width: 40px;
         height: 40px;
@@ -274,8 +274,8 @@
         height: 50px;
       }
 
-      /* Iphone */
-      @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+      /* Iphone  and mibile */
+      @media only screen and (min-device-width: 1px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
         margin-top: 11rem;
         margin-left: 0.5rem;
         width: 40px;
@@ -303,8 +303,8 @@
         margin-bottom: 3rem;
       }
 
-      /* Iphone */
-      @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+      /* Iphone  and mibile */
+      @media only screen and (min-device-width: 1px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
         width: 200px;
         height: 250px;
         margin-bottom: 1rem;
