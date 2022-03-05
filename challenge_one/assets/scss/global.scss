@@ -1,5 +1,35 @@
 @import "_variables";
 
+/* ------------ Extend/Inheritance --------- */
+//flex center use in index.vue
+%flex-jc-center {
+    display: flex;
+    justify-content: center;
+}
+
+//flex  wrap and direction row
+%flex-fw-fd {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+// default screen : width, height
+%default-screen {
+    min-height: 100vh;
+    min-width: -webkit-fill-available;
+    padding: 0;
+    margin: 0;
+}
+
+// default fullscreen 
+%default-fullscreen {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -25,29 +55,25 @@ body {
 }
 
 .containerbody {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    flex-wrap: wrap;
-    flex-direction: row;
-    min-height: 100vh;
-    min-width: -webkit-fill-available;
     overflow: hidden;
+    @extend %default-screen;
+    @extend %flex-fw-fd;
 }
 
 .containerregister {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    flex-wrap: wrap;
-    flex-direction: row;
-    min-height: 100vh;
-    min-width: -webkit-fill-available;
+    @extend %default-screen;
+    @extend %flex-fw-fd;
 
     @media (min-width: 1200px) {
         position: fixed;
         margin-top: -4rem;
     }
+}
+
+.containerchrismas {
+    box-sizing: border-box;
+    overflow: hidden;
+    @extend %default-screen;
 }
 
 // Extra small devices (portrait phones, less than 576px)
