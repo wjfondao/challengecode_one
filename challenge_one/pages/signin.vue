@@ -3,7 +3,7 @@
     <div class="headerregister">
       <Header />
     </div>
-    <div class="containerbody overflow-auto row">
+    <div class="containerregister overflow-auto row">
       <div class="sectionregisterone col-xl-5 col-lg-12 col-md-12 col-sm-12 mt-5">
         <div class="texttitle mt-5">
           <p id="textfirst">Hey,</p>

@@ -1,5 +1,5 @@
 <template>
-  <div class="containercard">
+  <div>
     <!-- Star Card Sign up -->
     <b-card class="maincard">
       <!-- Star Form Group -->
@@ -99,27 +99,22 @@ export default {
 <style scoped lang="scss">
 @import '../assets/scss/_variables.scss';
 
-
 .maincard {
   /* Start form group */
   .formsignin {
     padding: 8rem 10rem 0 10rem;
 
     /* Ipadpro */
-    @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
-      padding: 3rem 10rem 0 10rem;
-    }
-
-    /* Ipad */
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1366px) {
       padding: 3rem 10rem 0 10rem;
     }
 
     /* Iphone */
-    @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+    @media only screen and (min-device-width: 280px) and (max-device-width: 767px) {
       padding: 2rem 2rem 0 2rem;
     }
 
+    // Small devices (landscape phones, less than 280px)
     @media only screen and (max-device-width: 280px) {
       padding: 0;
     }
@@ -138,7 +133,7 @@ export default {
     .formgroup {
       .form-control {
         background-color: $foo-gray-nurse;
-        border: 1px solid $foo-light-grayish-yellow;
+        border: 1px solid $foo-green-gray;
         border-radius: 8px;
       }
 

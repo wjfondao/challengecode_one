@@ -11,6 +11,7 @@
             src="../assets/images/logo1.png"
           />
         </a>
+        
       </b-navbar-brand>
     </b-navbar>
   </div>

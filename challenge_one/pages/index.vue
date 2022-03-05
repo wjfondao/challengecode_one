@@ -67,16 +67,6 @@
     margin-top: 3rem;
     margin-bottom: auto;
 
-    // Large devices (desktops, 992px and up)
-    @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
-      margin-top: 3rem;
-    }
-
-    // Medium devices (tablets, 768px and up)
-    @media only screen and (min-width: 768px) and (max-width: 991.98px) {
-      margin-top: 3rem;
-    }
-
     .imagebell {
       @extend %flex-jc-center;
       .bell {

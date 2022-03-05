@@ -22,16 +22,17 @@
 </template>
 
 <style scoped lang="scss">
-@import '../../assets/scss/_variables.scss';
+@import '../assets/scss/_variables.scss';
 
 /* Button Google */
 .buttongoogle {
+  width: 100%;
   .text-uppercase {
     text-transform: none !important;
   }
   .btn {
     font-size: 14px !important;
-    border: 1px solid $foo-light-grayish-yellow;
+    border: 1px solid $foo-green-gray;
     border-radius: 8px;
   }
 }

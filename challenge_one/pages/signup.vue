@@ -3,7 +3,7 @@
     <div class="headerregister">
       <Header />
     </div>
-    <div class="containerbody row">
+    <div class="containerregister row">
       <div class="sectionregisterone col-xl-5 col-lg-12 col-md-12 col-sm-12">
         <div class="texttitle mt-5">
           <p id="textfirst">Hey,</p>

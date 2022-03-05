@@ -1,5 +1,5 @@
 <template>
-  <div class="containercard">
+  <div>
     <!-- Star Card Sign up -->
     <b-card class="maincard">
       <!-- Star Form Group -->
@@ -39,12 +39,18 @@
             ></b-form-input>
           </div>
         </div>
-       <!-- Button Create Account -->
+        <!-- Button Create Account -->
         <div class="btsubmit mt-5">
-          <b-button 
-            class="pt-3 pb-3" 
-            style="font-weight: bold; background-color:#A5D7CC; border: none; border-radius: 8px;;" 
-            block >
+          <b-button
+            class="pt-3 pb-3"
+            style="
+              font-weight: bold;
+              background-color: #a5d7cc;
+              border: none;
+              border-radius: 8px; ;
+            "
+            block
+          >
             Create Account
           </b-button>
         </div>
@@ -61,22 +67,21 @@
 </template>
 
 <script>
-
-import { createUserWithEmailAndPassword }  from 'firebase/auth'
+import { createUserWithEmailAndPassword } from 'firebase/auth'
 import { fireAuth } from '../services/fireinit'
 
 export default {
-  data(){
+  data() {
     return {
-      email: "",
-      password: ""
+      email: '',
+      password: '',
     }
   },
   method: {
-    signUp(){
-       createUserWithEmailAndPassword(fireAuth, this.email, this.password);
-    }
-  } 
+    signUp() {
+      createUserWithEmailAndPassword(fireAuth, this.email, this.password)
+    },
+  },
 }
 </script>
 
@@ -85,21 +90,21 @@ export default {
 .maincard {
   /* Start form group */
   .formsignup {
-    padding: 8rem 10rem 0 10rem;
+  padding: 8rem 10rem 0 10rem;
 
     /* Ipadpro */
-    @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
-      padding: 3rem 10rem 0 10rem;
-    }
-
-    /* Ipad */
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1366px) {
       padding: 3rem 10rem 0 10rem;
     }
 
     /* Iphone */
-    @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+    @media only screen and (min-device-width: 280px) and (max-device-width: 767px) {
       padding: 2rem 2rem 0 2rem;
+    }
+
+    // Small devices (landscape phones, less than 280px)
+    @media only screen and (max-device-width: 280px) {
+      padding: 0;
     }
 
     /* Text title */
@@ -107,21 +112,9 @@ export default {
       font-size: 48px;
       font-weight: bold;
 
-      /* Iphone */
-      @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+      // Small devices (landscape phones, less than 767.98px)
+      @media only screen and (max-width: 767.98px) {
         font-size: 24px;
-      }
-    }
-
-    /* Button Google */
-    .buttongoogle {
-      .text-uppercase {
-        text-transform: none !important;
-      }
-      .btn {
-        font-size: 14px !important;
-        border: 1px solid #e8e5e5;
-        border-radius: 8px;
       }
     }
 
@@ -130,10 +123,10 @@ export default {
       p {
         text-align: center;
         position: relative;
-        background-color: #fff;
+        background-color: $foo-white;
 
         .border {
-          border-bottom: 3px solid #999;
+          border-bottom: 3px solid $foo-dark-gray;
           position: absolute;
           width: 100%;
           left: 0;
@@ -143,7 +136,7 @@ export default {
         }
 
         .textor {
-          background-color: #fff;
+          background-color: $foo-white;
           position: relative;
           z-index: 2;
           padding: 10px;
@@ -154,8 +147,8 @@ export default {
 
     .formgroup {
       .form-control {
-        background-color: #f5f6f5;
-        border: 1px solid #e8e5e5;
+        background-color: $foo-gray-nurse;
+        border: 1px solid $foo-green-gray;
         border-radius: 8px;
       }
 
@@ -164,12 +157,12 @@ export default {
       }
     }
 
-    .textlogin{
+    .textlogin {
       display: flex;
       font-size: 14px;
       a {
         font-weight: bold;
-        color: #6fc5b2;
+        color: $foo-green-gray;
       }
     }
   }
