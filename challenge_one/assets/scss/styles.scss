@@ -17,5 +17,85 @@
 }
 
 .headerregister {
-    position:absolute;
+    position: absolute;
+}
+
+// Text titlle use in index.vue
+.texttitle {
+    color: $foo-white;
+    font-weight: bold;
+}
+
+//---------------------register Signin/Signup
+.sectionregisterone {
+    padding: 10px;
+    margin-top: 4rem;
+
+    .texttitle {
+        padding-left: 5rem;
+
+        // Small devices (landscape phones, less than 767.98px)
+        @media only screen and (max-width: 767.98px) {
+            padding-left: 2rem;
+        }
+
+        #textfirst {
+            font-size: 48px;
+
+            // Small devices (landscape phones, less than 767.98px)
+            @media only screen and (max-width: 767.98px) {
+                font-size: 24px;
+            }
+        }
+        #textsecond {
+            font-size: 24px;
+
+            // Small devices (landscape phones, less than 767.98px)
+            @media only screen and (max-width: 767.98px) {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.sectionregistertwo {
+    padding: 0;
+    margin-top: 4rem;
+
+    // Medium devices (tablets, 768px and up)
+    @media only screen and (min-width: 768px) and (max-width: 991.98px) {
+        padding-top: 11rem;
+    }
+
+    // Small devices (landscape phones, less than 767.98px)
+    @media only screen and (max-width: 767.98px) {
+        padding-top: 6rem;
+    }
+}
+
+/* text element with line behind text ----Or---- */
+.textlinebehind {
+    p {
+        text-align: center;
+        position: relative;
+        background-color: $foo-white;
+
+        .border {
+            border-bottom: 3px solid $foo-dark-gray;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 50%;
+            margin-top: -1px;
+            z-index: 1;
+        }
+
+        .textor {
+            background-color: $foo-white;
+            position: relative;
+            z-index: 2;
+            padding: 10px;
+            display: inline-block;
+        }
+    }
 }
