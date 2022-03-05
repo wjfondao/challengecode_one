@@ -149,34 +149,6 @@ export default {
     }
 
   
-
-    /* text element with line behind text */
-    .textlinebehind {
-      p {
-        text-align: center;
-        position: relative;
-        background-color: $foo-white;
-
-        .border {
-          border-bottom: 3px solid $foo-dark-gray;
-          position: absolute;
-          width: 100%;
-          left: 0;
-          top: 50%;
-          margin-top: -1px;
-          z-index: 1;
-        }
-
-        .textor {
-          background-color: $foo-white;
-          position: relative;
-          z-index: 2;
-          padding: 10px;
-          display: inline-block;
-        }
-      }
-    }
-
     .formgroup {
       .form-control {
         background-color: $foo-gray-nurse;
