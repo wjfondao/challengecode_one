@@ -1,0 +1,18 @@
+ // start image: tree
+ .imgtree {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    width: 81px;
+    height: 201px;
+    margin-top: -11rem;
+    margin-left: -3rem;
+
+    // Extra small devices (portrait phones, less than 576px)
+    @media only screen and (max-width: 575.98px) {
+      margin-top: -5.5rem;
+      margin-left: -1rem;
+      width: 40px;
+      height: 102px;
+    }
+  }

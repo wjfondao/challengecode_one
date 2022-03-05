@@ -1,0 +1,24 @@
+  // start iamge : candy
+  .imgcandy {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    margin-top: -3rem;
+    margin-left: -2rem;
+    width: 70px;
+    height: 150px;
+
+    // Extra small devices (portrait phones, less than 576px)
+    @media only screen and (max-width: 575.98px) {
+      margin-top: -1.25rem;
+      margin-left: -1rem;
+      width: 34px;
+      height: 76px;
+    }
+
+    /* Ipad */
+    @media only screen and (min-device-width: 576px) and (max-device-width: 1024px)  {
+      width: 70px;
+      height: 150px;
+    }
+  }

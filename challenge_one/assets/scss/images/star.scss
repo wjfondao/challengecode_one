@@ -1,0 +1,22 @@
+.star {
+    display: flex;
+    width: 39px;
+    height: 37px;
+    animation: stars 10s linear infinite;
+
+    // Extra small devices (portrait phones, less than 576px)
+    @media only screen and (max-width: 575.98px) {
+        width: 33px;
+        height: 33px;
+    }
+}
+
+//staet ainmation: stars
+@keyframes stars {
+    from {
+        transform: rotate(1deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

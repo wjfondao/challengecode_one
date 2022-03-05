@@ -5,7 +5,7 @@
       <!-- start images top in card -->
       <div class="imagecardtop">
         <img class="imgcandy" src="../assets/images/candystick.png" />
-        <img class="imgstarone" src="../assets/images/star.png" />
+        <img class=" star imgstarone" src="../assets/images/star.png" />
       </div>
       <!-- end images top in card -->
 
@@ -49,6 +49,11 @@
 
 <style scoped lang="scss">
 @import '../assets/scss/_variables';
+@import '../assets/scss/images/star.scss';
+@import '../assets/scss/images/candy.scss';
+@import '../assets/scss/images/tree.scss';
+@import '../assets/scss/images/candles.scss';
+@import '../assets/scss/images/handswithgift.scss';
 
 .containercard {
   font-family: $foo-family-letter !important;
@@ -60,108 +65,17 @@
     z-index: 0;
 
     // Extra small devices (portrait phones, less than 576px)
-    @media only screen and (max-width: 575.98px) {
-      margin-left: 15%;
-      margin-right: 15%;
-    }
-
-    /* Ipad */
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    @media only screen and (max-device-width: 1024px) {
       margin-left: 15%;
       margin-right: 15%;
     }
 
     // start Images-------------------
-    // start iamge : candy
-    .imgcandy {
-      display: flex;
-      position: absolute;
-      z-index: 1;
-      margin-top: -3rem;
-      margin-left: -2rem;
-      width: 70px;
-      height: 150px;
-
-      // Extra small devices (portrait phones, less than 576px)
-      @media only screen and (max-width: 575.98px) {
-        margin-top: -1.25rem;
-        margin-left: -1rem;
-        width: 34px;
-        height: 76px;
-      }
-
-      /* Ipad */
-      @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-        width: 70px;
-        height: 150px;
-      }
-    }
-
     // start image: star
     .imgstarone {
       z-index: 1;
-      width: 32px;
-      height: 32px;
       float: right;
       margin-right: -3rem;
-      animation: stars 10s linear infinite;
-    }
-
-    // start image: tree
-    .imgtree {
-      display: flex;
-      position: absolute;
-      z-index: 1;
-      width: 81px;
-      height: 201px;
-      margin-top: -11rem;
-      margin-left: -3rem;
-
-      // Extra small devices (portrait phones, less than 576px)
-      @media only screen and (max-width: 575.98px) {
-        margin-top: -5.5rem;
-        margin-left: -1rem;
-        width: 40px;
-        height: 102px;
-      }
-    }
-
-    // start image: candles
-    .imgcandles {
-      display: flex;
-      position: absolute;
-      z-index: 1;
-      width: 119px;
-      height: 114px;
-      margin-top: -5rem;
-      margin-left: 2rem;
-
-      // Extra small devices (portrait phones, less than 576px)
-      @media only screen and (max-width: 575.98px) {
-        margin-top: -2.5rem;
-        width: 58px;
-        height: 58px;
-      }
-    }
-
-    //start image: hand with gift
-    .imghandswithgift {
-      display: flex;
-      position: relative;
-      float: right;
-      z-index: 1;
-      width: 119px;
-      height: 150px;
-      margin-top: -6rem;
-      margin-right: -2rem;
-
-      // Extra small devices (portrait phones, less than 576px)
-      @media only screen and (max-width: 575.98px) {
-        margin-top: -3rem;
-        margin-right: -1rem;
-        width: 59px;
-        height: 76px;
-      }
     }
     // end Images-------------------
 
@@ -179,17 +93,12 @@
           width: 186px;
           height: 183px;
 
-          // Extra small devices (portrait phones, less than 576px)
-          @media only screen and (max-width: 575.98px) {
+          // Extra small devices (portrait phones, less than 1024px)
+          @media only screen and (max-device-width: 1024px) {
             width: 113px;
             height: 111px;
           }
 
-          /* Ipad */
-          @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-            width: 113px;
-            height: 111px;
-          }
         }
       }
       .cardtext {
@@ -203,13 +112,5 @@
   }
 }
 
-//staet ainmation: stars
-@keyframes stars {
-  from {
-    transform: rotate(1deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
 </style>

@@ -1,0 +1,17 @@
+ // start image: candles
+ .imgcandles {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    width: 119px;
+    height: 114px;
+    margin-top: -5rem;
+    margin-left: 2rem;
+
+    // Extra small devices (portrait phones, less than 576px)
+    @media only screen and (max-width: 575.98px) {
+      margin-top: -2.5rem;
+      width: 58px;
+      height: 58px;
+    }
+  }

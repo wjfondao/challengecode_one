@@ -1,0 +1,25 @@
+.sock {
+    display: flex;
+    width: 51px;
+    height: 91px;
+    margin-right: auto;
+    animation: sock 15s linear infinite;
+
+    // Extra small devices (portrait phones, less than 576px)
+    @media only screen and (max-width: 575.98px) {
+        width: 19px;
+        height: 38px;
+    }
+}
+// start animation: sock
+@keyframes sock {
+    0% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(20deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
+}

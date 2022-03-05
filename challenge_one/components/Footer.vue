@@ -99,7 +99,8 @@
 </template>
 
 <style scoped lang="scss">
+@import '../assets/scss/_variables';
 .bg-light {
-  background-color: #129277 !important;
+  background-color: $foo-green-ink !important;
   }
 </style>

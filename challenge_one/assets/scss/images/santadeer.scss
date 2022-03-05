@@ -1,0 +1,33 @@
+// start: image santa with deer
+.santadeer {
+    position: relative;
+    animation-name: santadeer;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    @extend %flex-jc-center;
+
+    .imgsantadeer {
+        width: 641px;
+        height: 367px;
+        box-sizing: border-box;
+
+        // Extra small devices (portrait phones, less than 576px)
+        @media only screen and (max-width: 575.98px) {
+            width: 282px;
+            height: 161px;
+        }
+    }
+}
+
+//start ainmation : Santa with deer
+@keyframes santadeer {
+    0% {
+        transform: translate(20px, 10px);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: translate(20px, 10px);
+    }
+}

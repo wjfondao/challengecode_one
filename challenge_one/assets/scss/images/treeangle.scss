@@ -1,0 +1,27 @@
+.treeangle {
+    display: flex;
+    width: 52px;
+    height: 83px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: tree 15s linear infinite;
+
+    // Extra small devices (portrait phones, less than 576px)
+    @media only screen and (max-width: 575.98px) {
+        width: 20px;
+        height: 34px;
+    }
+}
+
+//start animatopn: treeangle
+@keyframes tree {
+    0% {
+        transform: rotate(-40deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(-40deg);
+    }
+}
