@@ -81,35 +81,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@mixin border-radius {
-  border-top-right-radius: 2.5rem;
-  border-bottom-left-radius: 0 !important;
-}
-
+@import '../assets/scss/_variables.scss';
 .maincard {
-  min-height: 100vh;
-  min-width: -webkit-fill-available;
-  background-color: white;
-  border-top-left-radius: 2.5rem;
-  border-bottom-left-radius: 2.5rem;
-  border: none;
-  font-family: Lucida Bright, Georgia, serif;
-
-  /* Ipadpro */
-  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
-    @include border-radius();
-  }
-
-  /* Ipad */
-  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-    @include border-radius();
-  }
-
-  /* Iphone */
-  @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
-    @include border-radius();
-  }
-
   /* Start form group */
   .formsignup {
     padding: 8rem 10rem 0 10rem;

@@ -99,3 +99,24 @@
         }
     }
 }
+
+
+// Card  register Signin/Signup
+@mixin border-radius {
+    border-top-right-radius: 2.5rem;
+    border-bottom-left-radius: 0 !important;
+}
+
+.maincard {
+    min-height: 100vh;
+    min-width: -webkit-fill-available;
+    background-color: $foo-white;
+    border-top-left-radius: 2.5rem;
+    border-bottom-left-radius: 2.5rem;
+    border: none;
+
+    /* Ipadpro */
+    @media only screen and (max-device-width: 1366px) {
+        @include border-radius();
+    }
+}

@@ -26,7 +26,10 @@
           <!-- input: Password -->
           <div class="mt-3 col-12">
             <p>Password</p>
-            <b-form-input v-model="password" placeholder="Password"></b-form-input>
+            <b-form-input
+              v-model="password"
+              placeholder="Password"
+            ></b-form-input>
           </div>
         </div>
         <!-- Button Sumit-->
@@ -56,7 +59,9 @@
               Remenber me</b-form-radio
             >
           </b-form-group>
-          <a class="pl-2 pt-1"><i class="text-right">Forgot your password?</i></a>
+          <a class="pl-2 pt-1"
+            ><i class="text-right">Forgot your password?</i></a
+          >
         </div>
         <!--  text: Log up -->
         <div class="textlogin mt-4">
@@ -70,23 +75,22 @@
   </div>
 </template>
 <script>
-
-import { signInWithEmailAndPassword }  from 'firebase/auth'
+import { signInWithEmailAndPassword } from 'firebase/auth'
 import { fireAuth } from '../services/fireinit'
 
 export default {
-  data(){
+  data() {
     return {
-      email: "",
-      password: ""
+      email: '',
+      password: '',
     }
   },
   method: {
-    signIn(){
-       this.console.log(this.email, this.password);
-       signInWithEmailAndPassword(fireAuth, this.email, this.password);
-    }
-  } 
+    signIn() {
+      this.console.log(this.email, this.password)
+      signInWithEmailAndPassword(fireAuth, this.email, this.password)
+    },
+  },
 }
 </script>
 
@@ -95,25 +99,8 @@ export default {
 <style scoped lang="scss">
 @import '../assets/scss/_variables.scss';
 
-@mixin border-radius {
-  border-top-right-radius: 2.5rem;
-  border-bottom-left-radius: 0 !important;
-}
 
 .maincard {
-  min-height: 100vh;
-  min-width: -webkit-fill-available;
-  background-color: $foo-white;
-  border-top-left-radius: 2.5rem;
-  border-bottom-left-radius: 2.5rem;
-  border: none;
-
-  /* Ipadpro */
-  @media only screen and (min-device-width: 1px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
-    @include border-radius();
-  }
-
-
   /* Start form group */
   .formsignin {
     padding: 8rem 10rem 0 10rem;
@@ -142,13 +129,12 @@ export default {
       font-size: 48px;
       font-weight: bold;
 
-      /* Iphone */
-      @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+      // Small devices (landscape phones, less than 767.98px)
+      @media only screen and (max-width: 767.98px) {
         font-size: 24px;
       }
     }
 
-  
     .formgroup {
       .form-control {
         background-color: $foo-gray-nurse;
@@ -168,9 +154,8 @@ export default {
         font-weight: bold;
         color: $foo-green-gray;
       }
-
-      /* Iphone */
-      @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+      // Small devices (landscape phones, less than 767.98px)
+      @media only screen and (max-width: 767.98px) {
         font-size: 12px;
       }
     }
@@ -184,12 +169,12 @@ export default {
         color: $foo-green-gray;
       }
 
-      .custom-control-label { 
+      .custom-control-label {
         padding-top: 0.25rem;
       }
 
-      /* Iphone */
-      @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+      // Small devices (landscape phones, less than 767.98px)
+      @media only screen and (max-width: 767.98px) {
         font-size: 12px;
       }
     }
