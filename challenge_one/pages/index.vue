@@ -47,6 +47,7 @@
 
 <style scoped lang="scss">
 @import '../assets/scss/_variables.scss';
+@import '../assets/scss/global.scss';
 @import '../assets/scss/styles.scss';
 
 /* ------------ Extend/Inheritance --------- */
@@ -73,14 +74,8 @@
         width: 100px;
         height: 150px;
 
-        // Large devices (desktops, 992px and up)
-        @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
-          width: 80px;
-          height: 100px;
-        }
-
-        // Medium devices (tablets, 768px and up)
-        @media only screen and (min-width: 768px) and (max-width: 991.98px) {
+        // Large devices (desktops,tablets, 768px and up)
+        @media only screen and (min-width: 768px) and (max-width: 1199.98px) {
           width: 80px;
           height: 100px;
         }
@@ -96,13 +91,8 @@
       font-size: 64px;
       @extend %text-title;
 
-      // Large devices (desktops, 992px and up)
-      @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
-        font-size: 62px;
-      }
-
-      // Medium devices (tablets, 768px and up)
-      @media only screen and (min-width: 768px) and (max-width: 991.98px) {
+      // Large devices (desktops,tablets, 768px and up)
+      @media only screen and (min-width: 768px) and (max-width: 1199.98px) {
         font-size: 62px;
       }
 

@@ -37,14 +37,17 @@
 </template>
 
 <style scoped lang="scss">
+@import '../assets/scss/_variables.scss';
+@import '../assets/scss/global.scss';
+
 // start container content
 .imgleafangle {
   .leafangle {
     width: 108px;
     height: 86px;
 
-    /* Iphone */
-    @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+    // Extra small devices (portrait phones, less than 576px)
+    @media only screen and (max-width: 575.98px) {
       margin-top: 1rem;
       width: 73px;
       height: 58px;
@@ -54,8 +57,8 @@
 
 // start: subtitle
 .subtitle {
-  /* Iphone */
-  @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+  // Extra small devices (portrait phones, less than 576px)
+  @media only screen and (max-width: 575.98px) {
     margin-top: 3rem;
   }
 
@@ -66,8 +69,8 @@
     margin-left: auto;
     animation: stars 10s linear infinite;
 
-    /* Iphone */
-    @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+    // Extra small devices (portrait phones, less than 576px)
+    @media only screen and (max-width: 575.98px) {
       width: 33px;
       height: 33px;
     }
@@ -81,8 +84,8 @@
     margin-right: auto;
     animation: tree 15s linear infinite;
 
-    /* Iphone */
-    @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+    // Extra small devices (portrait phones, less than 576px)
+    @media only screen and (max-width: 575.98px) {
       width: 20px;
       height: 34px;
     }
@@ -95,8 +98,8 @@
     margin-right: auto;
     animation: sock 15s linear infinite;
 
-    /* Iphone */
-    @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+    // Extra small devices (portrait phones, less than 576px)
+    @media only screen and (max-width: 575.98px) {
       width: 19px;
       height: 38px;
     }
@@ -110,8 +113,8 @@
     margin-right: auto;
     animation: stars 10s linear infinite;
 
-    /* Iphone */
-    @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+    // Extra small devices (portrait phones, less than 576px)
+    @media only screen and (max-width: 575.98px) {
       width: 33px;
       height: 33px;
     }
@@ -120,20 +123,19 @@
 
 // start: image santa with deer
 .imgcontent {
-  display: flex;
   position: relative;
-  justify-content: center;
   animation-name: santadeer;
   animation-duration: 3s;
   animation-iteration-count: infinite;
+  @extend %flex-jc-center;
 
   .imgsantadeer {
     width: 641px;
     height: 367px;
     box-sizing: border-box;
 
-    /* Iphone */
-    @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+    // Extra small devices (portrait phones, less than 576px)
+    @media only screen and (max-width: 575.98px) {
       width: 282px;
       height: 161px;
     }
@@ -146,8 +148,8 @@
   .textscrolling {
     font-size: 18px;
 
-    /* Iphone */
-    @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+    // Extra small devices (portrait phones, less than 576px)
+    @media only screen and (max-width: 575.98px) {
       font-size: 12px;
     }
   }
@@ -158,9 +160,9 @@
 //start ainmation : Santa with deer
 @keyframes santadeer {
   0% {
-    transform: translate(20px, 10px);    
+    transform: translate(20px, 10px);
   }
-   50% {
+  50% {
     transform: rotate(-5deg);
   }
   100% {

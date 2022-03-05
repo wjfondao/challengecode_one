@@ -1,5 +1,5 @@
 <template>
-  <div class=" mt-5 containercard row">
+  <div class="mt-5 containercard row">
     <!-- start card -->
     <div class="card_message">
       <!-- start images top in card -->
@@ -48,7 +48,7 @@
 </template>
 
 <style scoped lang="scss">
-@import "../assets/scss/_variables";
+@import '../assets/scss/_variables';
 
 .containercard {
   font-family: $foo-family-letter !important;
@@ -59,8 +59,8 @@
     margin-right: 25%;
     z-index: 0;
 
-    /* Iphone */
-    @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+    // Extra small devices (portrait phones, less than 576px)
+    @media only screen and (max-width: 575.98px) {
       margin-left: 15%;
       margin-right: 15%;
     }
@@ -82,8 +82,8 @@
       width: 70px;
       height: 150px;
 
-      /* Iphone */
-      @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+      // Extra small devices (portrait phones, less than 576px)
+      @media only screen and (max-width: 575.98px) {
         margin-top: -1.25rem;
         margin-left: -1rem;
         width: 34px;
@@ -117,8 +117,8 @@
       margin-top: -11rem;
       margin-left: -3rem;
 
-      /* Iphone */
-      @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+      // Extra small devices (portrait phones, less than 576px)
+      @media only screen and (max-width: 575.98px) {
         margin-top: -5.5rem;
         margin-left: -1rem;
         width: 40px;
@@ -136,8 +136,8 @@
       margin-top: -5rem;
       margin-left: 2rem;
 
-      /* Iphone */
-      @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+      // Extra small devices (portrait phones, less than 576px)
+      @media only screen and (max-width: 575.98px) {
         margin-top: -2.5rem;
         width: 58px;
         height: 58px;
@@ -155,8 +155,8 @@
       margin-top: -6rem;
       margin-right: -2rem;
 
-      /* Iphone */
-      @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+      // Extra small devices (portrait phones, less than 576px)
+      @media only screen and (max-width: 575.98px) {
         margin-top: -3rem;
         margin-right: -1rem;
         width: 59px;
@@ -179,8 +179,8 @@
           width: 186px;
           height: 183px;
 
-          /* Iphone */
-          @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+          // Extra small devices (portrait phones, less than 576px)
+          @media only screen and (max-width: 575.98px) {
             width: 113px;
             height: 111px;
           }
@@ -194,9 +194,8 @@
       }
       .cardtext {
         padding: 0 5rem 5rem 5rem;
-
-        /* Iphone */
-        @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+        // Extra small devices (portrait phones, less than 576px)
+        @media only screen and (max-width: 575.98px) {
           padding: 0 1rem 1rem 1rem;
         }
       }

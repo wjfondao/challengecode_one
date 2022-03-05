@@ -1,6 +1,6 @@
 <template>
   <div class="containerchrismas">
-     <!-- start header-->
+    <!-- start header-->
     <div>
       <Header />
     </div>
@@ -19,12 +19,12 @@
       </div>
     </section>
     <!-- end section two -->
-     <!-- start footer-->
+    <!-- start footer-->
     <div class="">
       <Footer />
     </div>
-     <!-- end footer-->
-    
+    <!-- end footer-->
+
     <!-- start loading -->
     <div class="loading">
       <div class="flex">
@@ -39,20 +39,13 @@
 </template>
 
 <style scoped lang="scss">
-@import "../assets/scss/_variables.scss";
+@import '../assets/scss/_variables.scss';
+@import '../assets/scss/global.scss';
 
 .containerchrismas {
-  min-height: 100vh;
-  min-width: -webkit-fill-available;
-  margin-right: 0;
-  margin-left: 0;
-  padding: 0;
-  box-sizing: border-box;
-  overflow: hidden;
-
   .section {
     display: flex;
-    height: 101vh;
+    height: 100vh;
   }
   // start container content
   .container_content {
@@ -61,16 +54,16 @@
     font-size: 36px;
     font-weight: bold;
 
-    /* Iphone */
-    @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
-      font-size: 18px;
-      overflow: hidden;
+    // Extra small devices (portrait phones, less than 576px)
+    @media only screen and (max-width: 575.98px) {
       display: flex;
       justify-content: center;
       align-items: center;
+      font-size: 18px;  
     }
   }
 
+  // start section two
   .section_two {
     box-sizing: border-box;
     margin-top: 25%;
@@ -78,20 +71,16 @@
   }
   // start loading
   .loading {
+    z-index: 1;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     background: $foo-green-ink;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    z-index: 15;
     animation: fadeout 8s linear forwards;
+    @extend %flex-jc-center;
+    @extend %default-fullscreen;
 
-    /* Iphone */
-    @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+    // Extra small devices (portrait phones, less than 576px)
+    @media only screen and (max-width: 575.98px) {
       animation: fadeout 7s linear forwards;
     }
 
@@ -107,17 +96,13 @@
         animation-duration: 8s;
         animation-iteration-count: 1;
 
-        /* Iphone */
-        @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+        // Extra small devices (portrait phones, less than 576px)
+        @media only screen and (max-width: 575.98px) {
           width: 150px;
           height: 200px;
           animation-duration: 15s;
         }
       }
-    }
-
-    h2 {
-      color: $foo-black;
     }
 
     .bar {
@@ -126,22 +111,19 @@
       height: 40px;
       background: transparent;
       margin: 0 25px;
-      border: 2px solid #fff;
+      border: 2px solid $foo-white;
       box-sizing: border-box;
 
       &::before {
         content: '';
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #fff;
+        background: $foo-white;
         transform-origin: left;
         animation: animate 5s linear forwards;
+        @extend %default-fullscreen;
 
-        /* Iphone */
-        @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+        // Extra small devices (portrait phones, less than 576px)
+        @media only screen and (max-width: 575.98px) {
           animation: animate 8s linear forwards;
         }
       }
@@ -149,28 +131,18 @@
       &::after {
         content: ' Yo-Ho-Ho! ~ Merry Christmas...';
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
         font-weight: 800;
         text-transform: uppercase;
         letter-spacing: 10px;
         text-align: center;
         line-height: 36px;
-        color: #a5d7cc !important;
+        color: $foo-green-gray !important;
         font-size: 20px;
         mix-blend-mode: difference;
+        @extend %default-fullscreen;
 
-        /* Iphone */
-        @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
-          content: 'Merry Christmas...';
-          letter-spacing: 5px;
-          font-size: 12px;
-        }
-
-        /* Galaxy Fold */
-        @media only screen and (max-device-width: 280px) {
+        // Extra small devices (portrait phones, less than 576px)
+        @media only screen and (max-width: 575.98px) {
           content: 'Merry Christmas...';
           letter-spacing: 4px;
           font-size: 9px;
