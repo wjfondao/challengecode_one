@@ -29,7 +29,12 @@
 //---------------------register Signin/Signup
 .sectionregisterone {
     padding: 10px;
-    margin-top: 4rem;
+    margin-top: 10rem !important;
+
+    // Small devices (landscape phones, less than 767.98px)
+    @media only screen and (max-width: 767.98px) {
+        margin-top: 3rem !important;
+    }
 
     .texttitle {
         padding-left: 5rem;
@@ -100,12 +105,7 @@
     }
 }
 
-
 // Card  register Signin/Signup
-@mixin border-radius {
-    border-top-right-radius: 2.5rem;
-    border-bottom-left-radius: 0 !important;
-}
 
 .maincard {
     min-height: 100vh;
@@ -117,6 +117,9 @@
 
     /* Ipadpro */
     @media only screen and (max-device-width: 1366px) {
-        @include border-radius();
+        border-top-right-radius: 2.5rem;
+        border-bottom-left-radius: 0 !important;
     }
+
+   
 }
