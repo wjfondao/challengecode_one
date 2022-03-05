@@ -17,7 +17,7 @@
       </div>
 
       <div class="sectionregistertwo col-xl-7 col-lg-12 col-md-12 col-sm-12">
-        <Cardsignup />
+        <Formsignup />
       </div>
     </div>
   </div>
