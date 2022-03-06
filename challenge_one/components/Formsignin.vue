@@ -28,6 +28,7 @@
             <p>Password</p>
             <b-form-input
               v-model="password"
+              type="password"
               placeholder="Password"
             ></b-form-input>
           </div>
@@ -35,6 +36,7 @@
         <!-- Button Sumit-->
         <div class="btsubmit mt-5">
           <b-button
+            
             class="pt-3 pb-3"
             style="
               font-weight: bold;
@@ -43,7 +45,7 @@
               border-radius: 8px; ;
             "
             block
-            @click="signIn"
+            @click="loginUser"
           >
             Sign in
           </b-button>
@@ -75,26 +77,31 @@
   </div>
 </template>
 <script>
-import { signInWithEmailAndPassword } from 'firebase/auth'
-import { fireAuth } from '../services/fireinit'
-
 export default {
-  data() {
-    return {
-      email: '',
-      password: '',
+  data: () => ({
+    email: "",
+    password: "",
+    selected: ""
+  }),
+  methods: {
+    async loginUser() {
+
+      try {
+        await this.$fire.auth.signInWithEmailAndPassword(
+          this.email,
+          this.password
+        )
+
+        alert("signed in")
+
+        this.$router.push('/chrismasgift')
+      } catch (e) {
+        alert(e.message);
+      }
     }
-  },
-  method: {
-    signIn() {
-      this.console.log(this.email, this.password)
-      signInWithEmailAndPassword(fireAuth, this.email, this.password)
-    },
-  },
-}
+  }
+};
 </script>
-
-
 
 <style scoped lang="scss">
 @import '../assets/scss/_variables.scss';
