@@ -1,2 +1,5 @@
-# challengecode_one
-challenge code #1 : sing up
+# My mini-project 01 : Christmas gift System.
+
+## 🎄 A project I'm working on. 🌷    Finish : 💗💗💗💗💗💗💗💗🖤🖤  80%
+
+### 1.  Introduction
