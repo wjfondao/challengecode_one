@@ -15,5 +15,5 @@
 
 ### 2.   Development tools
       2.1 UX/UI design with Figma.
-      2.2 Development language is HTML, SASS, JavaScript, and Nuxt.js (version 6.14.15).
+      2.2 Programming languages. is HTML, SASS, JavaScript, and Nuxt.js (version 6.14.15).
       2.3 Software development is BootstrapVue and Visual Studio Code.
