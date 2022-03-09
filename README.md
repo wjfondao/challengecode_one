@@ -13,7 +13,7 @@
    ดังนั้นผู้จัดทำจึงได้คิดริเริ่มที่จะพัฒนาเว็บไซต์ระบบ Christmas gift หรือ การ์ดอวยพรออนไลน์ขึ้นมา เพื่อเป็นส่วนหนึ่งของวิธีการลดปริมาณขยะจากการ์ดได้มากยิ่งขึ้นในเทศกาลคริสต์มาส  รวมไปถึงผู้จัดทำได้ออกเเบบเว็บไซต์ให้มีความรู้สึกสนุกสนาน ทำให้ผู้ใช้งานรู้สึกมีความสุข เมื่อได้รับการ์ดอวยพร
 
 
-### 2.   Development tools
-      2.1 UX/UI design with Figma.
-      2.2 Programming languages. is HTML, SASS, JavaScript, and Nuxt.js (version 6.14.15).
-      2.3 Software development is BootstrapVue and Visual Studio Code.
+
+  
+
+      
