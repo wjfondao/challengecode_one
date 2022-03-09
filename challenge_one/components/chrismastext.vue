@@ -19,7 +19,7 @@
           />
         </div>
         <div class="col-12 cardtext">
-          <b-card-text style="font-weight: bold"> Dear, Name </b-card-text>
+          <b-card-text style="font-weight: bold"> Dear, Benz </b-card-text>
           <b-card-text
             class="text-center"
             style="line-height: 30px; letter-spacing: 2px"
