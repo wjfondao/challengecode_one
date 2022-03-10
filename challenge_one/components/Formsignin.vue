@@ -92,6 +92,9 @@ export default {
           this.password
         )
 
+        const user =  this.$fire.auth.currentUser
+        console.log(user);
+
         alert("signed in")
 
         this.$router.push('/chrismasgift')
