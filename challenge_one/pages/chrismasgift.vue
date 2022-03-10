@@ -2,7 +2,7 @@
   <div class="containerchrismas">
     <!-- start header-->
     <div>
-      <Header />
+      <Header/>
     </div>
     <!-- end header -->
     <!-- start section one -->
@@ -42,7 +42,9 @@
 @import '../assets/scss/_variables.scss';
 @import '../assets/scss/global.scss';
 
+
 .containerchrismas {
+
   .section {
     display: flex;
     height: 100vh;

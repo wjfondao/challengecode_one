@@ -52,6 +52,7 @@ body {
     background-color: $foo-green-gray;
     background-image: url(http://www.transparenttextures.com/patterns/asfalt-light.png);
     z-index: 1;
+    width: 100% !important;
 }
 
 .containerbody {
