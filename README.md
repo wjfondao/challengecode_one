@@ -42,6 +42,6 @@
    
    <img src="/image/signup.png" width="100%" height="100%"/>
       
-      4.4 Chrismas gift
+      4.4 Chrismas gift 
       
    <img src="/image/show (1).gif" width="100%" height="100%"/>
