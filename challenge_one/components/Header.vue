@@ -1,7 +1,6 @@
 <template>
-  <div class="header row">
+  <div class="">
     <b-navbar>
-      <div class="col-6">
         <b-navbar-brand href="../../">
           <a class="imglogo">
             <img
@@ -13,34 +12,7 @@
             />
           </a>
         </b-navbar-brand>
-      </div>
-
-      <!--  start: Button-->
-      <div class="col-6">
-        <b-button variant="outline-dark" class="mr-4" style="float: right; " @click="signOut">Sign out </b-button>
-      </div>
     </b-navbar>
   </div>
 </template>
 
-<script>
-export default {
-  data: () => ({
-  }),
-  methods: {
-    async signOut() {
-
-      try {
-        await this.$fire.auth.signOut(
-        )
-
-        alert("Sign out")
-
-        this.$router.push('/')
-      } catch (e) {
-        alert(e.message);
-      }
-    }
-  }
-};
-</script>

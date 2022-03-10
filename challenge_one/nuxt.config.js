@@ -38,23 +38,7 @@ export default {
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [
         // https://go.nuxtjs.dev/bootstrap
-        'bootstrap-vue/nuxt', [
-            '@nuxtjs/firebase',
-            {
-                config: {
-                    apiKey: 'AIzaSyCORIo2iWNvvk011o_2TtkSLSU8qie1pRE',
-                    authDomain: 'challengeone-57616.firebaseapp.com',
-                    projectId: 'challengeone-57616',
-                    storageBucket: 'challengeone-57616.appspot.com',
-                    messagingSenderId: '638283081037',
-                    appId: '1:638283081037:web:d1db116e5259630292c304',
-                    measurementId: 'G-LNRFDQ47DC',
-                },
-                services: {
-                    auth: true, // Just as example. Can be any other service.
-                },
-            },
-        ],
+        'bootstrap-vue/nuxt'
     ],
 
     // ------------------

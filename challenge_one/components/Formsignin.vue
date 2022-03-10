@@ -45,7 +45,7 @@
               border-radius: 8px; ;
             "
             block
-            @click="loginUser"
+            href="../../chrismasgift"
           >
             Sign in
           </b-button>
@@ -76,35 +76,6 @@
     <!-- End Card Sign up -->
   </div>
 </template>
-<script>
-export default {
-  data: () => ({
-    email: "",
-    password: "",
-    selected: ""
-  }),
-  methods: {
-    async loginUser() {
-
-      try {
-        await this.$fire.auth.signInWithEmailAndPassword(
-          this.email,
-          this.password
-        )
-
-        const user =  this.$fire.auth.currentUser
-        console.log(user);
-
-        alert("signed in")
-
-        this.$router.push('/chrismasgift')
-      } catch (e) {
-        alert(e.message);
-      }
-    }
-  }
-};
-</script>
 
 <style scoped lang="scss">
 @import '../assets/scss/_variables.scss';

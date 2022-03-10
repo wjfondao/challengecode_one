@@ -7,16 +7,6 @@
         <!--Title text -->
         <p id="title">Sign up</p>
         <div class="formgroup row pt-4">
-          <!-- input: Firstname -->
-          <!-- <div class="mt-md-1 col-xl-6 col-lg-6 col-md-12 col-sm-12">
-            <p>Firstname</p>
-            <b-form-input v-model="firs" placeholder="Firstname"></b-form-input>
-          </div> -->
-          <!-- input: Lastname -->
-          <!-- <div class="mt-3 mt-lg-1 col-xl-6 col-lg-6 col-md-12 col-sm-12">
-            <p>Lastname</p>
-            <b-form-input v-model="text" placeholder="Lastname"></b-form-input>
-          </div> -->
           <!-- input: Email -->
           <div class="mt-3 col-12">
             <p>Email Address</p>
@@ -29,7 +19,11 @@
           <!-- input: Password -->
           <div class="mt-3 col-12">
             <p>Password</p>
-            <b-form-input v-model="password" type="password" placeholder="Password"></b-form-input>
+            <b-form-input
+              v-model="password"
+              type="password"
+              placeholder="Password"
+            ></b-form-input>
           </div>
           <!-- input: Confirm Password -->
           <div class="mt-3 col-12">
@@ -52,7 +46,7 @@
               border-radius: 8px; ;
             "
             block
-            @click="createUser"
+            href="../../chrismasgift"
           >
             Create Account
           </b-button>
@@ -69,30 +63,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  data: () => ({
-    email: "",
-    password: ""
-  }),
-  methods: {
-    async createUser() {
-      try {
-        await this.$fire.auth.createUserWithEmailAndPassword(
-          this.email,
-          this.password
-        )
-
-        alert("create user success")
-
-        this.$router.push('/chrismasgift')
-      } catch (e) {
-        alert(e.message)
-      }
-    }
-  },
-}
-</script>
 
 <style scoped lang="scss">
 @import '../assets/scss/_variables.scss';
