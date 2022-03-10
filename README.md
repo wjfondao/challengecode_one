@@ -19,6 +19,7 @@
    
       2.2 Programming languages is HTML, SASS, JavaScript, and Nuxt.js (version 6.14.15).
       2.3 Software development is BootstrapVue and Visual Studio Code.
+      2.4 Authentication with Firebase.
   
       
 ### 3. Images
