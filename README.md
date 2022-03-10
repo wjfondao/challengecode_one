@@ -17,7 +17,7 @@
   
   <img src="/image/Figma.png" width="100%" height="100%"/>
    
-      2.2 Programming languages. is HTML, SASS, JavaScript, and Nuxt.js (version 6.14.15).
+      2.2 Programming languages is HTML, SASS, JavaScript, and Nuxt.js (version 6.14.15).
       2.3 Software development is BootstrapVue and Visual Studio Code.
 
 ### 3. DEMO
