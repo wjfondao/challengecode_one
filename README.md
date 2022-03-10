@@ -19,20 +19,29 @@
    
       2.2 Programming languages is HTML, SASS, JavaScript, and Nuxt.js (version 6.14.15).
       2.3 Software development is BootstrapVue and Visual Studio Code.
+  
+      
+### 3. Images
+<p> 🌷 Drawkit 
+ <a href="https://drawkit.com/product/christmas-thanksgiving-illustrations"><img src="https://assets-global.website-files.com/5bcb46130508ef456a7b2930/5bf413a0903391cd594d9321_logo-export-5.png"  width="100" height="40"></a>
+</p>
+<p> 🌷 Wannathis  
+ <a href="https://wannathis.gumroad.com/l/hZEZt"><img src="https://public-files.gumroad.com/variants/b09gelq3ynsm31173990390yfjg4/4ec519eb32080d4ff1ef08cba157dc2ac7dab092fa26aeca54e8e2b8f31f9a63"  width="50" height="40"></a>
+</p>
 
-### 3. DEMO
-      3.1 Home
+### 4. DEMO
+      4.1 Home
       
    <img src="/image/home.gif" width="100%" height="100%"/>
    
-      3.2 Sign in 
+      4.2 Sign in 
 
    <img src="/image/signin.png" width="100%" height="100%"/>
    
-      3.3 Sign up
+      4.3 Sign up
    
    <img src="/image/signup.png" width="100%" height="100%"/>
       
-      3.4 Chrismas gift
+      4.4 Chrismas gift
       
    <img src="/image/show (1).gif" width="100%" height="100%"/>
